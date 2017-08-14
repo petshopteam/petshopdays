@@ -1,0 +1,195 @@
+// main menu
+.main-menu {
+  width: 100%;
+  position: relative;
+  // top: 0;
+  // transform: translateY(-100%);
+  background-color: @white;
+  &.active {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    // скрываю соц.иконки в fixed меню на 980px
+    .main-menu__social {
+      @media(max-width: @brakepoint-large) {
+        display: none;
+      }
+      @media(max-width: @brakepoint-medium) {
+        display: block;
+      }
+    }
+  }
+  // main menu toggle
+  @media(max-width: @brakepoint-medium) {
+    // display: none;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    padding-bottom: 80px;
+    z-index: 11;
+    &.active {
+      position: absolute;
+      top: 0;
+    }
+    // скрываем
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: all 0.4s ease;
+  }
+}
+
+.main-menu__wrap {
+  @media(max-width: @brakepoint-large) {
+    padding-left: 0;
+    padding-left: 0;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding: 0 15px;
+    max-width: 99%;
+  }
+}
+
+.main-menu__hidden-btn {
+  .icon-menu;
+  display: none;
+  width: 34px;
+  height: 34px;
+  background-color: @white;
+  border: 10px solid @white;
+  z-index: 10;
+  transition: 0.3s;
+
+  @media(max-width: @brakepoint-medium) {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 22px;
+  }
+  &:hover {
+    box-shadow: 0 0 20px 3px @orange;
+  }
+}
+
+.main-menu__close {
+  .icon-close;
+  display: none;
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 41px;
+  right: 30px;
+  &:hover {
+    opacity: 0.7;
+  }
+  @media(max-width: @brakepoint-medium) {
+    display: block;
+  }
+}
+
+.main-menu__list {
+  float: left;
+  @media(max-width: @brakepoint-medium) {
+    float: none;
+    text-align: center;
+  }
+}
+
+.main-menu__item {
+  display: inline-block;
+  list-style: none;
+  margin-right: 20px;
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+  font-family: @DinRegular;
+  font-size: 16px;
+  line-height: 60px;
+  text-transform: uppercase;
+  }
+  &.logo {
+    .icon-menu-logo;
+    position: relative;
+    top: 13px;
+    width: 47px;
+    height: 35px;
+    a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &.logo_big {
+    .icon-p-days;
+    width: 268px;
+    height: 125px;
+    position: relative;
+    left: 21px;
+    top: 30px;
+    @media(max-width: @brakepoint-medium) {
+      .visible;
+      margin-bottom: 70px;
+    }
+  }
+  &.buy {
+    @media(max-width: @brakepoint-medium) {
+      .visible;
+      .btn;
+      margin-top: 65px;
+      width: 170px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1em;
+      a {
+        font-size: 24px;
+        line-height: 50px;
+        font-weight: bold;
+        color: @white;
+      }
+      &:hover a {
+        text-decoration: none;
+      }
+    }
+  }
+  @media(max-width: @brakepoint-large) {
+    margin-right: 15px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    display: block;
+    margin-right: 0;
+    a {
+      font-size: 30px;
+      line-height: 72px;
+    }
+  }
+}
+
+.main-menu__social {
+  float: right;
+  margin-top: 14px;
+  @media(max-width: @brakepoint-large) {
+    margin-right: -17px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    float: none;
+    text-align: center;
+    margin-top: 40px;
+    .social__item {
+      width: 57px;
+      height: 57px;
+      margin-right: 14px;
+      &.vk a {
+        background-size: 40px;
+        background-position: 8px
+      }
+      &.inst a {
+        background-size: 34px;
+        background-position: 12px
+      }
+      &.fb a {
+        background-size: 17px;
+        background-position: 19px
+      }
+    }
+  }
+}

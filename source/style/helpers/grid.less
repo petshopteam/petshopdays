@@ -1,0 +1,51 @@
+// GRID
+.container {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  @media(max-width: @brakepoint-large) {
+    max-width: 938px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+// ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
+.center {
+  text-align: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.clearfix:after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.visible {
+  display: block !important;
+}

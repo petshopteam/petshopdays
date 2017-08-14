@@ -1,0 +1,118 @@
+.slider {
+  position: relative;
+  padding-top: 198px;
+  padding-bottom: 95px;
+  background-color: @main-bg-color;
+  @media(max-width: @brakepoint-large) {
+    padding-top: 184px;
+    padding-bottom: 145px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding-bottom: 184px;
+  }
+}
+
+.slider__wrap {
+  position: relative;
+}
+
+.slider__slide {
+  width: 280px;
+  height: 280px;
+  background-color: #bbbbbb;
+  margin-right: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.slider__popup {
+  box-sizing: border-box;
+  position: absolute;
+  width: 600px;
+  height: auto;
+  background-color: @white;
+  top: 13.3%;
+  left: auto;
+  right: 50%;
+  padding: 60px 40px 55px 43px;
+  @media(max-width: @brakepoint-large) {
+    right: 37%;
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: 570px;
+    top: 37%;
+    right: 24%;
+    padding-right: 20px;
+    padding-left: 35px;
+  }
+}
+
+.slider__popup-title {
+  margin-bottom: 40px;
+  @media(max-width: @brakepoint-medium) {
+    margin-bottom: 31px;
+  }
+}
+
+.slider__popup-text {
+  display: inline-block;
+  margin-bottom: 12px;
+}
+
+.slider__popup-bottom {
+  margin-top: 20px;
+}
+
+// terms (blue text)
+.slider__terms-list {
+  float: left;
+  width: 500px;
+  margin-top: 65px;
+  margin-left: 53%;
+  list-style: none;
+  @media(max-width: @brakepoint-large) {
+    width: 330px;
+    margin-left: 65%;
+    margin-top: 20px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    float: right;
+    width: auto;
+    margin: 0;
+    margin-top: 66px;
+    margin-right: 22px;
+  }
+}
+
+.slider__terms-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 189px;
+  margin-bottom: 40px;
+  margin-right: 62px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  &:last-child {
+    width: 235px;
+  }
+  @media(max-width: @brakepoint-large) {
+    width: 140px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    &:last-child {
+      width: 140px;
+    }
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: 140px;
+    display: block;
+    margin: 0;
+    margin-bottom: 38px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

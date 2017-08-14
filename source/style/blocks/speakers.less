@@ -1,0 +1,121 @@
+.speakers {
+  background-color: @main-bg-color;
+  padding-bottom: 80px;
+}
+
+.speakers__wrap {
+  padding: 40px;
+  padding-top: 60px;
+  background-color: @white;
+  @media(max-width: @brakepoint-large) {
+    padding-top: 70px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: auto;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding-top: 96px;
+  }
+}
+
+.speakers__title {
+  float: left;
+  margin-bottom: 40px;
+  @media(max-width: @brakepoint-large) {
+    margin-bottom: 55px;
+  }
+}
+
+.speakers__list {
+  list-style: none;
+}
+
+.speakers__item {
+  float: left;
+  width: 48%;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  &:nth-child(2n) {
+    margin-right: 0;
+  }
+  @media(max-width: @brakepoint-large) {
+    margin-right: 4%;
+    margin-bottom: 35px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    display: block;
+    width: auto;
+    margin-right: 0;
+    margin-left: 60px;
+    margin-bottom: 38px;
+  }
+}
+
+.speakers__item-title {
+  position: relative;
+  left: -43px;
+  margin-top: 40px;
+  margin-bottom: 45px;
+  @media(max-width: @brakepoint-large) {
+    margin-top: 8px;
+    margin-bottom: 31px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding-top: 19px;
+    padding-bottom: 17px;
+    left: -58px;
+  }
+}
+
+.speakers__item-subtitle {
+  margin-bottom: 20px;
+  @media(max-width: @brakepoint-large) {
+    margin-bottom: 11px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    margin-bottom: 15px;
+  }
+}
+
+.speakers__text {
+
+}
+
+.speakers__item-img {
+  float: left;
+  width: 252px;
+  height: 318px;
+  margin-right: 20px;
+  @media(max-width: @brakepoint-large) {
+    width: 203px;
+    height: 255px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: 252px;
+    height: 318px;
+  }
+  &.img-1 {
+    background-color: @speaker-1;
+  }
+  &.img-2 {
+    background-color: @speaker-2;
+  }
+  &.img-3 {
+    background-color: @speaker-3;
+  }
+  &.img-4 {
+    background-color: @speaker-4;
+  }
+  &.img-5 {
+    background-color: @speaker-5;
+  }
+  &.img-6 {
+    background-color: @speaker-6;
+  }
+  &.img-7 {
+    background-color: @speaker-7;
+  }
+  &.img-8 {
+    background-color: @speaker-8;
+  }
+}

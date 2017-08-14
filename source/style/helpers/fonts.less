@@ -1,0 +1,37 @@
+// @font-face mixin (eot,woff,ttf)
+.font-face(@family, @filename: @family, @weight: normal, @style: normal){
+  @font-face{
+    font-family: "@{family}";
+    src:
+        // url('../fonts/@{filename}/@{filename}.eot'),
+        // url('../fonts/@{filename}/@{filename}.woff') format('woff'),
+        url('../fonts/@{filename}/@{filename}.ttf') format('truetype');
+    font-weight: @weight;
+    font-style: @style;
+  }
+}
+
+// ( 1 - font_family and file_name, 2 - folder_name, 3 (opt) - weight, 4 (opt) - style )
+.font-face(DinRegular, DinRegular, 500);
+.font-face(DinMedium, DinMedium, 400);
+.font-face(DinBold, DinBold, 700);
+.font-face(DinLight, DinLight, 300);
+
+// шрифтовые иконки "рубль" от дизайнера
+@font-face{
+  font-family: "Rub";
+  src: url('../fonts/Rub/Rub.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+// slick-slider's fonts
+@font-face{
+  font-family: "slick";
+  font-weight: normal;
+  font-style: normal;
+  src: url('../fonts/Slick/slick.eot');
+  src: url('../fonts/Slick/slick.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/Slick/slick.woff') format('woff'),
+  url('../fonts/Slick/slick.ttf') format('truetype'),
+  url('../fonts/Slick/slick.svg#slick') format('svg');
+}

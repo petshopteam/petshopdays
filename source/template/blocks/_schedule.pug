@@ -1,0 +1,98 @@
+//- schedule
+section.schedule#schedule
+  .container.schedule__wrap
+    .clearfix
+      h2.title_h2.schedule__title Расписание
+      .toggle-tabs
+        a.toggle-tab-1.tab.j-sc-link-1.active 1 день
+        a.toggle-tab-2.tab.j-sc-link-2 2 день
+      h3.schedule__subtitle 30 сентября
+    div
+      ul.schedule__list.j-sc-tab-1
+        //- открытие фестиваля
+        li.schedule__item.center.clearfix
+          span.schedule__item-time 10:00
+          span.schedule__item-title Открытие фестиваля
+          
+        mixin schedule-item(time, title, name)
+          li.schedule__item.center.clearfix
+            span.schedule__item-time= time
+            span.schedule__item-title.small= title
+            span.schedule__item-name= name
+            
+            
+        +schedule-item(
+        "12:00",
+        "\"Сознание животных: как разговаривают  обезьяны и чем думают муравьи\"",
+        "Евгения Тимонова"
+        )
+        
+        +schedule-item(
+        "14:00",
+        "\"Сознание животных: как разговаривают обезьяны\"",
+        "Имя Фамилия"
+        )
+        
+        +schedule-item(
+        "16:00",
+        "Мастер класс: Рисование животных",
+        "Имя Фамилия"
+        )
+        
+        +schedule-item(
+        "18:00",
+        "\"В мире животных\"",
+        "Николай Дроздов"
+        )
+          
+        //- закрытие фестиваля
+        li.schedule__item.center.clearfix
+          span.schedule__item-time 19:30
+          span.schedule__item-title Заырытие фестиваля
+          
+          
+          
+          //- tab2
+          
+      ul.schedule__list.j-sc-tab-2
+        //- открытие фестиваля
+        li.schedule__item.center.clearfix
+          span.schedule__item-time 10:00
+          span.schedule__item-title Открытие фестиваля (День 2)
+          
+        mixin schedule-item(time, title, name)
+          li.schedule__item.center.clearfix
+            span.schedule__item-time= time
+            span.schedule__item-title.small= title
+            span.schedule__item-name= name
+            
+            
+        +schedule-item(
+        "12:00",
+        "\"Сознание животных: как разговаривают  обезьяны и чем думают муравьи\"",
+        "Евгения Тимонова"
+        )
+        
+        +schedule-item(
+        "14:00",
+        "\"Сознание животных: как разговаривают обезьяны\"",
+        "Имя Фамилия"
+        )
+        
+        +schedule-item(
+        "16:00",
+        "Мастер класс: Рисование животных",
+        "Имя Фамилия"
+        )
+        
+        +schedule-item(
+        "18:00",
+        "\"В мире животных\"",
+        "Николай Дроздов"
+        )
+          
+        //- закрытие фестиваля
+        li.schedule__item.center.clearfix
+          span.schedule__item-time 19:30
+          span.schedule__item-title Заырытие фестиваля
+      

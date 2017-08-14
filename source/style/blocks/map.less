@@ -1,0 +1,58 @@
+.map {
+  position: relative;
+  padding-bottom: 55px;
+  @media(max-width: @brakepoint-medium) {
+    padding-bottom: 413px;
+  }
+}
+
+#mapkit-7181 {
+  width: 100%;
+  height: 500px;
+}
+
+.map__wrap {
+
+}
+
+.map__popup {
+  box-sizing: border-box;
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  width: 589px;
+  background-color: @white;
+  z-index: 2;
+  padding: 50px 40px;
+  padding-bottom: 85px;
+  @media (max-width: @brakepoint-large) {
+    left: 38%;
+  }
+  @media (max-width: @brakepoint-medium) {
+    // ВРЕМЕННО !! ИСПРАВИТЬ !
+    left: 20%;
+    top: 35%;
+  }
+}
+
+.map__popup-title {
+  margin-bottom: 52px;
+}
+
+.map__popup-date {
+  .main-head__date;
+}
+
+.map__popup-place {
+  .main-head__place;
+}
+
+.map__popup-cost {
+  .map__popup-place;
+  margin-top: 45px;
+  margin-bottom: 5px;
+}
+
+.map__popup-btn {
+  margin-top: 40px;
+}

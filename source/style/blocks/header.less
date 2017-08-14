@@ -1,0 +1,71 @@
+// HEADER
+.main-head {
+  position: relative;
+  width: 100%;
+  height: 93vh;
+  min-height: 700px;
+  background-color: @lightblue;
+  background-image: url('../img/background/animals-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  @media(max-width: @brakepoint-large) {
+    background-size: 190%;
+    min-height: 610px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    min-height: 610px;
+    height: 100vh;
+  }
+}
+
+.main-head__wrap {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-left: 34px;
+  @media(max-width: @brakepoint-large) {
+    padding-left: 60px;
+  }
+
+}
+
+.main-head__logo {
+  margin-bottom: 79px;
+  @media(max-width: @brakepoint-large) {
+    margin-bottom: 68px;
+  }
+}
+
+.main-head__title {
+  width: 70%;
+  margin-bottom: 30px;
+  @media(max-width: @brakepoint-large) {
+    width: 80%;
+    margin-bottom: 40px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: 100%;
+  }
+}
+
+.main-head__date {
+font-size: 30px;
+line-height: 20px;
+text-transform: uppercase;
+}
+
+.main-head__place {
+  font-size: 30px;
+  line-height: 20px;
+  margin-bottom: 30px;
+}
+
+.main-head__place-link {
+  font-size: 30px;
+  line-height: 60px;
+  font-family: @DinBold;
+  text-transform: uppercase;
+}

@@ -1,0 +1,42 @@
+.banner {
+  background-color: @yellow;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  @media(max-width: @brakepoint-large) {
+    padding-top: 0;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding-bottom: 46px;
+  }
+}
+
+.banner__wrap {
+  padding-left: 110px;
+  padding-right: 80px;
+  .icon-blogger-logo;
+  background-position: 89% center;
+  @media(max-width: @brakepoint-large) {
+    padding-top: 84px;
+    padding-left: 79px;
+    padding-bottom: 25px;
+    background-size: 21%;
+    background-position: 97% 80%;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding-left: 58px;
+    background-size: 22%;
+    background-position: 92% 78%;
+  }
+}
+
+.banner__logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 609px;
+  margin-bottom: 90px;
+  @media(max-width: @brakepoint-medium) {
+    max-width: 462px;
+    margin-bottom: 81px;
+  }
+}

@@ -1,0 +1,77 @@
+.main-foot {
+
+}
+
+.main-foot__wrap {
+  padding-left: 45px;
+  @media(max-width: @brakepoint-large) {
+    padding-left: 0;
+  }
+  @media(max-width: @brakepoint-medium) {
+    padding-left: 20px;
+  }
+}
+
+.main-foot__logo {
+  .icon-p-days;
+  float: left;
+  width: 210px;
+  height: 98px;
+  margin-right: 60px;
+}
+
+
+.main-foot__social-list {
+  float: left;
+  margin-right: 50px;
+  margin-top: 50px;
+  .social__item {
+    width: 46px;
+    height: 46px;
+    margin-right: 16px;
+    &:last-child {
+      margin-right: 0;
+    }
+    .icon.icon-vk {
+      background-size: 30px;
+      background-position: 7px 16px;
+    }
+    .icon.icon-inst {
+    background-size: 27px;
+    background-position: 9px 9px;
+    }
+    .icon.icon-fb {
+      background-size: 13px;
+      background-position: 16px 9px;
+    }
+  }
+}
+
+.main-foot__info {
+  float: left;
+  margin-top: 53px;
+}
+
+// topline
+.main-topline {
+  margin-top: 67px;
+  background-color: @lightblue;
+  padding-left: 65px;
+  p {
+    font-size: 14px;
+    line-height: 2.1em;
+  }
+  @media(max-width: @brakepoint-large) {
+    padding-left: 0;
+    margin-left: -30px;
+    p {
+      font-size: 12px;
+      line-height: 2.1em;
+    }
+  }
+  @media(max-width: @brakepoint-medium) {
+    .container {
+      padding-left: 50px;
+    }
+  }
+}

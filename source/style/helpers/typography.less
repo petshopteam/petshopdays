@@ -1,0 +1,221 @@
+// FOUNDATION
+body {
+  margin: 0;
+  font-family: @DinRegular;
+  font-size: 16px;
+  color: @black;
+  // background-color: @lightblue;
+}
+
+main {
+  position: relative;
+}
+
+// reset margins and paddings
+h1,h2,h3,h4,h5,h6,p,a,ul,li,section,article,div,span {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+  &.lined {
+    text-decoration: underline;
+  }
+}
+
+// ВСПОМОГАТЕЛЬНЫЕ КЛАССЫ
+.shadow {
+  box-shadow: 0 44px 53px 1px rgba(10, 39, 40, 0.15);
+}
+
+// ЗАГОЛОВКИ
+
+h1 {
+  // пока отсутствует. Вместо него - лого
+}
+
+.title_h2 {
+  color: @black;
+  font-family: @DinBold;
+  font-size: 48px;
+  line-height: 55px;
+}
+
+.title_h3 {
+color: @black;
+font-family: @DinBold;
+font-size: 30px;
+line-height: 36px;
+}
+
+.title_h4 {
+color: @black;
+font-family: @DinRegular;
+font-size: 16px;
+line-height: 22px;
+}
+
+.title_blue {
+  font-family: @DinRegular;
+  font-weight: 500;
+  color: @blue;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+// text
+.text_normal {
+color: @black;
+font-family: @DinNormal;
+font-size: 16px;
+line-height: 24px;
+}
+
+.text_light {
+color: @black;
+font-family: @DinLight;
+font-size: 16px;
+line-height: 24px;
+}
+
+.text_blue {
+  color: @blue;
+  font-family: @DinRegular;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.text_orange {
+  color: @orange;
+  font-size: inherit;
+  font-family: @DinBold;
+  line-height: inherit;
+}
+
+.bold {
+  font-family: @DinBold;
+}
+
+.regular {
+  font-family: @DinRegular;
+}
+
+.normal {
+  font-family: @DinNormal;
+}
+
+.light {
+  font-family: @DinLight;
+}
+
+.unclicable {
+  color: #576269;
+}
+
+// КНОПКИ
+
+.btn {
+  display: inline-block;
+  font-family: @DinBold;
+  font-size: 18px;
+  line-height: 2.9em;
+  padding: 0 1.1em;
+  color: @white;
+  background-color: @orange;
+  text-transform: uppercase;
+  border-radius: 2px;
+  transition: background-color 0.3s;
+  &:hover {
+    text-decoration: none;
+    background-color: @darkorange;
+  }
+}
+
+// ИКОНКИ
+
+.rub {
+  display: inline-block;
+  font-family: @Rub;
+  font-style: normal;
+}
+
+.social__item {
+  transition: background-color 0.2s;
+  display: inline-block;
+  vertical-align: top;
+  list-style: none;
+  border-radius: 50%;
+  background-color: @blue;
+  margin-right: 10px;
+  width: 33px;
+  height: 33px;
+  &:last-child {
+    margin-right: 0;
+  }
+  a {
+    font-family: @DinRegular;
+    font-size: 16px;
+    line-height: 60px;
+    text-transform: uppercase;
+  }
+  &.vk {
+    &:hover {
+      background-color: #4D75A3;
+    }
+  }
+  &.inst {
+    &:hover {
+      background-color: #E12F67;
+    }
+  }
+  &.fb {
+    &:hover {
+      background-color: #3B5998;
+    }
+  }
+}
+
+
+// TABS
+.toggle-tabs {
+  max-width: 200px;
+  float: right;
+  margin-top: 15px;
+  margin-right: 10px;
+  @media(max-width: @brakepoint-large) {
+    margin-top: 10px;
+  }
+}
+
+.tab {
+  cursor: pointer;
+  display: inline-block;
+  color: @blue;
+  background-color: @white;
+  text-transform: uppercase;
+  border-radius: 2px;
+  font-size: 18px;
+  font-family: @DinBold;
+  line-height: 2em;
+  padding: 0 0.5em;
+  border: 2px solid @blue;
+  margin-right: 15px;
+  transition: 0.2s;
+  &:hover {
+    text-decoration: none;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &.active {
+    color: @white;
+    background-color: @blue;
+  }
+}

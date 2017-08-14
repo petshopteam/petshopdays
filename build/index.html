@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Petshop Days</title>
+    <meta content="" name="author">
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <link rel="stylesheet" href="/assets/css/foundation.css">
+    <link rel="stylesheet" href="/assets/css/app.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
+    <link rel="stylesheet" href="https://cdn.mapkit.io/v1/infobox.css">
+    <script src="/assets/js/foundation.js" defer></script>
+    <script src="/assets/js/app.js" defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD-8H4hutCXCUKFEi8Meto3Q0MGM-bI4I8&amp;extension=.js"></script>
+    <script src="https://cdn.mapkit.io/v1/infobox.js"></script><!--[if lt IE 9]>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
+  </head>
+  <body>
+    <main class="main-content">
+      <header class="main-head" id="header"><a class="main-menu__hidden-btn j-menu-toggle"></a>
+        <div class="container">
+          <div class="main-head__wrap"><h1 class="main-head__logo icon-p-days"></h1>
+            <h2 class="title_h2 main-head__title">Первый городской фестиваль домашних животных</h2>
+            <p class="main-head__date">30/09/01/10</p>
+            <p class="main-head__place">Санкт-Петербург,<a class="main-head__place-link" href="#map">Ткачи</a></p><a class="btn">купить билет за 200 <i class="rub">а</i></a>
+          </div>
+        </div>
+      </header>
+      <nav class="main-menu clearfix j-main-menu"><a class="main-menu__close j-menu-close"></a>
+        <div class="container main-menu__wrap">
+          <ul class="main-menu__list">
+            <li class="main-menu__item logo_big hidden"></li>
+            <li class="main-menu__item logo hidden"><a href="#header"></a></li>
+            <li class="main-menu__item"><a href="#about">О фестивале</a></li>
+            <li class="main-menu__item"><a href="#speakers">Спикеры</a></li>
+            <li class="main-menu__item"><a href="#schedule">Расписание</a></li>
+            <li class="main-menu__item"><a href="#missPetshop">Miss Petshop</a></li>
+            <li class="main-menu__item"><a href="#faq">Faq</a></li>
+            <li class="main-menu__item"><a href="#sponsors">Спонсоры</a></li>
+            <li class="main-menu__item"><a href="#map">Место проведения</a></li>
+            <li class="main-menu__item buy hidden"><a class="text_orange" href="#">Купить билет</a></li>
+          </ul>
+          <ul class="main-menu__social">
+            <li class="social__item vk"><a class="icon icon-vk" href="vk.com"></a></li>
+            <li class="social__item inst"><a class="icon icon-inst" href="instagram.com"></a></li>
+            <li class="social__item fb"><a class="icon icon-fb" href="facebook.com"></a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="about" id="about">
+        <div class="container clearfix about__wrap">
+          <h2 class="title_h2 about__title">О фестивале</h2>
+          <div class="about__description">
+            <p class="text_normal">
+              Фестиваль «Petshop Days» объединит не только хозяев, их питомцев и людей, занимающихся разведением, воспитанием и защитой домашних животных,но и всех тех, кто, так или иначе, причастен к животному миру - 
+              от производителей кормов и игрушек до просто любопытных прохожих. 
+              Мы обещаем вам зрелищное, веселое, интересное и поучительное мероприятие, которое непременно понравится даже тем, у кого ещё нет любимых четвероногих друзей.
+            </p>
+          </div>
+          <div class="about__advantages clearfix">
+            <p class="about__advantage">Креативные <br>площадки</p>
+            <p class="about__advantage">Популярные<br>блоггеры</p>
+            <p class="about__advantage">Ведущие<br>зоологи</p>
+            <p class="about__advantage">Конкурс<br>красоты</p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="about__map relative">
+            <div class="about__map-bg j-map-bg"></div>
+            <div class="map-title map-title-1">
+              <h2 class="title_h2 map-bg-title unclicable">Гардероб</h2>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-1">Ресторан</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Текст для ресторана</p>
+              </div>
+            </div>
+            <div class="map-title map-title-2">
+              <h2 class="title_h2 map-bg-title unclicable">Ресторан</h2>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-2">Ресторан</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Текст для ресторана</p>
+              </div>
+            </div>
+            <div class="map-title map-title-3"><a class="title_h2 map-bg-title j-popup-title">Зоо<br>ресторан</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-3">Зоо ресторан</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Проголодались? Мы подумали и об этом. В ресторанной локации вы сможете основательно подкрепиться, выпить прохладительный напиток, а, если вы пришли с питомцем, то он тоже не останется без обеда. Ваш друг получит только высококачественный корм и самую свежую воду.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-4"><a class="title_h2 map-bg-title j-popup-title">Petshop.ru</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-4">Petshop.ru</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Фирменная локация самой большой в России сети интернет-магазинов товаров для животных Petshop.ru. Только здесь — самые популярные товары по приятным ценам, самые улыбчивые продавцы, самые профессиональные консультации, а также подарки, сюрпризы, веселые конкурсы и активности.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-5"><a class="title_h2 map-bg-title j-popup-title">Маркет</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-5">Маркет</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Здесь вы сможете пополнить запасы корма и наполнителя, прикупить для вашего четвероного друга лакомства и игрушки, протестировать косметику для ухода за шерстью. Помимо этого в пространстве Маркета вас ждет оригинальная hand-made продукция, сувениры и эксклюзивные товары от партнеров фестиваля.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-6"><a class="title_h2 map-bg-title j-popup-title">Фотозона</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-6">Фотозона</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Какое же мероприятие без красивых фотографий на память? Мы подготовили для вас несколько красочных фирменных фотозон, где у вас получатся только самые яркие и веселые фото, которые непременно соберут множество лайков и комментариев.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-7"><a class="title_h2 map-bg-title j-popup-title">Блоггеры</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-7">Блоггеры</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Не можете жить без Instagram и Youtube? Регулярно проверяете как дела у любимых блогеров? Тогда не проходите мимо! Специально для вас мы собрали в одном месте признанных звезд этих площадок, некоторые из которых приедут со своими звездными питомцами. Вас ждут интересные мастер-классы, фото- и автограф-сессии. Возможно, кумир, на которого ты подписан, будет у нас на фестивале…</p>
+              </div>
+            </div>
+            <div class="map-title map-title-8"><a class="title_h2 map-bg-title j-popup-title">Приюты</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-8">Приюты</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Мы не могли не предоставить нашим гостям возможность внести свой вклад в деятельность благотворительных организаций. На наш фестиваль придут милые хвостатые гости — бездомные собаки из кошки из приютов «Друг» и «Пойдем домой». В зоне Приюты вы сможете пообщаться с ними, подробнее узнать об их жизни, помочь тем, кто остался без дома. А, быть может, именно вам захочется подарить одному из них дом?</p>
+              </div>
+            </div>
+            <div class="map-title map-title-9"><a class="title_h2 map-bg-title j-popup-title">Здоровье</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-9">Здоровье</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Высококвалифицированные врачи-ветеринары ответят на любой ваш, даже самый неожиданный, вопрос, проведут консультацию и общий осмотр вашего питомца. Нужно подобрать правильное питание? Получить рекомендации по уходу или лечению? Выездная ветеринарная служба Petshop Days к вашим услугам!</p>
+              </div>
+            </div>
+            <div class="map-title map-title-10"><a class="title_h2 map-bg-title j-popup-title">Beauty<br>bar</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-10">Beauty bar</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Лохматых — причешем, причесанным сделаем модную стрижку, а подстриженным повяжем бантик. А пока над четвероногими клиентами колдует профессиональный грумер, наши beauty-партнеры из ibody.ru сделают их хозяйкам профессиональный макияж, а хозяину подровняют бороду. Наши мастера ждут вас!</p>
+              </div>
+            </div>
+            <div class="map-title map-title-11"><a class="title_h2 map-bg-title j-popup-title">Фотозона</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-11">Фотозона</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Какое же мероприятие без красивых фотографий на память? Мы подготовили для вас несколько красочных фирменных фотозон, где у вас получатся только самые яркие и веселые фото, которые непременно соберут множество лайков и комментариев.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-12"><a class="title_h2 map-bg-title j-popup-title">Лекторий</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-12">Лекторий</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Вам доводилось слышать, как поет Дроздов? Хотите попасть в рейтинг Баженова? Именитые лекторы, знакомые вам по ТВ-передачам и YouTube каналам, доступно и увлекательно расскажут интересные факты и истории о домашних животных. Кроме того, на основной сцене лектория мы подготовили несколько неожиданных сюрпризов! Например, награждение победителей конкурсов Мисс Petshop и Petshop Blogger Awards.</p>
+              </div>
+            </div>
+            <div class="map-title map-title-13"><a class="title_h2 map-bg-title j-popup-title">Дети</a>
+              <div class="about__map-popup shadow j-popup-window">
+                <h2 class="title_h2 about__popup-title title-13">Дети</h2><a class="about__popup_close icon-close j-popup-close"></a>
+                <p class="text_light">Детская площадка со множеством развлечений придется очень кстати, если ваши дети немного заскучали: рисование, аквагрим, игрушки, конкурсы и викторины от заводных аниматоров. Зона детского смеха и веселья — скучно не будет!</p>
+              </div>
+            </div>
+          </div>
+          <ul class="about__sections-list">
+            <li class="about__sections-item item-1 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-5 j-section-toggle">Маркет</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Здесь вы сможете пополнить запасы корма и наполнителя, прикупить для вашего четвероного друга лакомства и игрушки, протестировать косметику для ухода за шерстью. Помимо этого в пространстве Маркета вас ждет оригинальная hand-made продукция, сувениры и эксклюзивные товары от партнеров фестиваля.</p>
+            </li>
+            <li class="about__sections-item item-2 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-3 j-section-toggle">Зооресторан</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Проголодались? Мы подумали и об этом. В ресторанной локации вы сможете основательно подкрепиться, выпить прохладительный напиток, а, если вы пришли с питомцем, то он тоже не останется без обеда. Ваш друг получит только высококачественный корм и самую свежую воду.</p>
+            </li>
+            <li class="about__sections-item item-3 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-9 j-section-toggle">Здоровье</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Высококвалифицированные врачи-ветеринары ответят на любой ваш, даже самый неожиданный, вопрос, проведут консультацию и общий осмотр вашего питомца. Нужно подобрать правильное питание? Получить рекомендации по уходу или лечению? Выездная ветеринарная служба Petshop Days к вашим услугам!</p>
+            </li>
+            <li class="about__sections-item item-4 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-10 j-section-toggle">Beauty Bar</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Лохматых — причешем, причесанным сделаем модную стрижку, а подстриженным повяжем бантик. А пока над четвероногими клиентами колдует профессиональный грумер, наши beauty-партнеры из ibody.ru сделают их хозяйкам профессиональный макияж, а хозяину подровняют бороду. Наши мастера ждут вас!</p>
+            </li>
+            <li class="about__sections-item item-5 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-7 j-section-toggle">Блоггеры</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Не можете жить без Instagram и Youtube? Регулярно проверяете как дела у любимых блогеров? Тогда не проходите мимо! Специально для вас мы собрали в одном месте признанных звезд этих площадок, некоторые из которых приедут со своими звездными питомцами. Вас ждут интересные мастер-классы, фото- и автограф-сессии. Возможно, кумир, на которого ты подписан, будет у нас на фестивале…</p>
+            </li>
+            <li class="about__sections-item item-6 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-12 j-section-toggle">Лекторий</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Вам доводилось слышать, как поет Дроздов? Хотите попасть в рейтинг Баженова? Именитые лекторы, знакомые вам по ТВ-передачам и YouTube каналам, доступно и увлекательно расскажут интересные факты и истории о домашних животных. Кроме того, на основной сцене лектория мы подготовили несколько неожиданных сюрпризов! Например, награждение победителей конкурсов Мисс Petshop и Petshop Blogger Awards.</p>
+            </li>
+            <li class="about__sections-item item-7 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-4 j-section-toggle">Petshop.ru</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Фирменная локация самой большой в России сети интернет-магазинов товаров для животных Petshop.ru. Только здесь — самые популярные товары по приятным ценам, самые улыбчивые продавцы, самые профессиональные консультации, а также подарки, сюрпризы, веселые конкурсы и активности.</p>
+            </li>
+            <li class="about__sections-item item-8 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-8 j-section-toggle">Приюты</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Мы не могли не предоставить нашим гостям возможность внести свой вклад в деятельность благотворительных организаций. На наш фестиваль придут милые хвостатые гости — бездомные собаки из кошки из приютов «Друг» и «Пойдем домой». В зоне Приюты вы сможете пообщаться с ними, подробнее узнать об их жизни, помочь тем, кто остался без дома. А, быть может, именно вам захочется подарить одному из них дом?</p>
+            </li>
+            <li class="about__sections-item item-9 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-6 j-section-toggle">Фотозона</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Какое же мероприятие без красивых фотографий на память? Мы подготовили для вас несколько красочных фирменных фотозон, где у вас получатся только самые яркие и веселые фото, которые непременно соберут множество лайков и комментариев.</p>
+            </li>
+            <li class="about__sections-item item-10 relative j-section-item">
+              <h2 class="title_h2 about__popup-title title-13 j-section-toggle">Дети</h2><a class="about__sections-toggle j-section-toggle toggle"></a>
+              <p class="text_light j-section-text">Детская площадка со множеством развлечений придется очень кстати, если ваши дети немного заскучали: рисование, аквагрим, игрушки, конкурсы и викторины от заводных аниматоров. Зона детского смеха и веселья — скучно не будет!</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="speakers shadow" id="speakers">
+        <div class="container speakers__wrap shadow">
+          <div class="clearfix">
+            <h2 class="title_h2 speakers__title">Спикеры</h2>
+            <div class="toggle-tabs"><a class="toggle-tab-1 tab j-sp-link-1 active">1 день</a><a class="toggle-tab-2 tab j-sp-link-2">2 день</a></div>
+          </div>
+          <div class="clearfix">
+            <ul class="speakers__list clearfix j-sp-tab-1">
+                            <li class="speakers__item"><img class="speakers__item-img img-1" src="/assets/img/photos/speaker-1.png">
+                              <h3 class="title_h3 speakers__item-title">Николай<br>Дроздов
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-2" src="/assets/img/photos/speaker-2.png">
+                              <h3 class="title_h3 speakers__item-title">Тимофей<br>Боженов
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-3" src="/assets/img/photos/speaker-3.png">
+                              <h3 class="title_h3 speakers__item-title">Григорий<br>Манев
+                                <h4 class="title_h4 speakers__item-subtitle">автор и ведущий программы &quot;Планета собак&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-4" src="/assets/img/photos/speaker-4.png">
+                              <h3 class="title_h3 speakers__item-title">Алексей<br>Верещагин
+                                <h4 class="title_h4 speakers__item-subtitle">инструктор-дрессировщик собак, консультант Планета собак </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-5" src="/assets/img/photos/speaker-5.png">
+                              <h3 class="title_h3 speakers__item-title">Евгения<br>Тимонова
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-6" src="/assets/img/photos/speaker-6.png">
+                              <h3 class="title_h3 speakers__item-title">Имя<br>Фамилия
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-7" src="/assets/img/photos/speaker-7.png">
+                              <h3 class="title_h3 speakers__item-title">Имя<br>Фамилия
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-8" src="/assets/img/photos/speaker-8.png">
+                              <h3 class="title_h3 speakers__item-title">Имя<br>Фамилия
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+            </ul>
+            <ul class="speakers__list clearfix j-sp-tab-2">
+                            <li class="speakers__item"><img class="speakers__item-img img-7" src="/assets/img/photos/speaker-7.png">
+                              <h3 class="title_h3 speakers__item-title">Имя<br>Фамилия
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+                            <li class="speakers__item"><img class="speakers__item-img img-8" src="/assets/img/photos/speaker-8.png">
+                              <h3 class="title_h3 speakers__item-title">Имя<br>Фамилия
+                                <h4 class="title_h4 speakers__item-subtitle">Теле и радио ведущий, автор программы &quot;В мире животных&quot; </h4>
+                                <p class="text_light speakers__text"> &quot;Сознание животных: как разговаривают обезьяны и чем думают муравьи&quot; </p>
+                              </h3>
+                            </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="schedule" id="schedule">
+        <div class="container schedule__wrap">
+          <div class="clearfix">
+            <h2 class="title_h2 schedule__title">Расписание</h2>
+            <div class="toggle-tabs"><a class="toggle-tab-1 tab j-sc-link-1 active">1 день</a><a class="toggle-tab-2 tab j-sc-link-2">2 день</a></div>
+            <h3 class="schedule__subtitle">30 сентября</h3>
+          </div>
+          <div>
+            <ul class="schedule__list j-sc-tab-1">
+              <li class="schedule__item center clearfix"><span class="schedule__item-time">10:00</span><span class="schedule__item-title">Открытие фестиваля</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">12:00</span><span class="schedule__item-title small">&quot;Сознание животных: как разговаривают  обезьяны и чем думают муравьи&quot;</span><span class="schedule__item-name">Евгения Тимонова</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">14:00</span><span class="schedule__item-title small">&quot;Сознание животных: как разговаривают обезьяны&quot;</span><span class="schedule__item-name">Имя Фамилия</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">16:00</span><span class="schedule__item-title small">Мастер класс: Рисование животных</span><span class="schedule__item-name">Имя Фамилия</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">18:00</span><span class="schedule__item-title small">&quot;В мире животных&quot;</span><span class="schedule__item-name">Николай Дроздов</span></li>
+              <li class="schedule__item center clearfix"><span class="schedule__item-time">19:30</span><span class="schedule__item-title">Заырытие фестиваля</span></li>
+            </ul>
+            <ul class="schedule__list j-sc-tab-2">
+              <li class="schedule__item center clearfix"><span class="schedule__item-time">10:00</span><span class="schedule__item-title">Открытие фестиваля (День 2)</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">12:00</span><span class="schedule__item-title small">&quot;Сознание животных: как разговаривают  обезьяны и чем думают муравьи&quot;</span><span class="schedule__item-name">Евгения Тимонова</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">14:00</span><span class="schedule__item-title small">&quot;Сознание животных: как разговаривают обезьяны&quot;</span><span class="schedule__item-name">Имя Фамилия</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">16:00</span><span class="schedule__item-title small">Мастер класс: Рисование животных</span><span class="schedule__item-name">Имя Фамилия</span></li>
+                            <li class="schedule__item center clearfix"><span class="schedule__item-time">18:00</span><span class="schedule__item-title small">&quot;В мире животных&quot;</span><span class="schedule__item-name">Николай Дроздов</span></li>
+              <li class="schedule__item center clearfix"><span class="schedule__item-time">19:30</span><span class="schedule__item-title">Заырытие фестиваля</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="banner">
+        <div class="container banner__wrap"><img class="banner__logo icon" src="assets/img/svg/blogger.svg"><a class="banner__btn btn">Подробнее</a></div>
+      </section>
+      <section class="slider" id="missPetshop">
+        <div class="slider__container j-slider-container">
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+          <div class="slider__slide j-slider-slide"></div>
+        </div>
+        <div class="slider__popup shadow">
+          <h2 class="title_h2 slider__popup-title">Miss Petshop</h2>
+          <p class="text_light slider__popup-text">Выложите  фотографию со своим питомцем в любой из социальных сетей, а команда организаторов фестиваля «Pet Shop Days» выбирет финалисток с учетом количества лайков под фото.</p>
+          <p class="text_light slider__popup-text">Суперпризы  - годовой запас корма, и набор косметики от ibody.ru</p>
+          <p class="text_light slider__popup-text">
+            Участвовать в конкурсе можно через Instagram с хештегом #MissPetshop или <a class="lined">ВКонтакте</a></p>
+          <p class="text_light slider__popup-text">Конкурсы между собой не пересекаются: если вы не попали в число финалисток в одной социальной сети, то сможете испытать судьбу в другой.</p>
+          <div class="slider__popup-bottom">
+            <p class="text_normal slider__popup-text">Финалистки будут определены <span class="text_orange">18 сентября </span>и объявлены в нашей встрече <a class="lined">ВКонтакте.</a></p>
+            <p class="text_normal slider__popup-text">Победительница будет выбрана жюри <span class="text_orange">30 сентября </span>на фестивале.</p>
+          </div>
+        </div>
+        <div class="slider__terms clearfix">
+          <ul class="slider__terms-list">
+            <li class="slider__terms-item text_blue">на фото вы должны быть со своим питомцем</li>
+            <li class="slider__terms-item text_blue">можно выкладывать только одно фото</li>
+            <li class="slider__terms-item text_blue">публиковать можно только собственные фотографии</li>
+            <li class="slider__terms-item text_blue">в конкурсе могут принимать участие девушки любого возраста</li>
+          </ul>
+        </div>
+      </section>
+      <section class="faq" id="faq">
+        <div class="container faq__wrap">
+          <h2 class="title_h2 faq__title">Faq</h2>
+          <h3 class="title_h3 faq__subtitle">Часто задаваемые вопросы</h3>
+          <ul class="faq__list">
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Когда и где состаится фестиваль?</h4>
+              <p class="text_normal">Petshop Days состоится в выходные, 30 сентября и 1 октября, в Санкт-Петербурге. С 11:00 до 20:00  ждем вас в креативном пространстве «Ткачи» по адресу наб. Обводного канала, 60.</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Где купить билеты на Petshop Days?</h4>
+              <p class="text_normal">Билеты на Petshop Days можно приобрести на нашем сайте petshopdays.ru<br>Стоимость взрослого билета <span class="text_orange">200 рублей.</span><br>Билет для детей <span class="text_orange">100 рублей.</span><br>Любой из билетов может быть приобретён как на один, так и на два дня. Программа фестиваля уникальна для каждого дня.
+                Стоимость билета на два дня <span class="text_orange">300 рублей.</span>
+              </p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Какие виды билетов предусмотрены?</h4>
+              <p class="text_normal"> <span class="bold">Взрослый - </span>предоставляет своему владельцу возможность попасть на мероприятие и даёт бесплатный доступ ко всем развлекательным площадкам фестиваля.<br><span class="bold">Детский - </span>входной билет для детей от 7 до12 лет. Детям до 7 лет входной билет предоставляется бесплатно, но только в сопровождении взрослых.   </p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Как осуществляется вход для гостей с ограниченными возможностями и пожилих людей?</h4>
+              <p class="text_normal">Гости с ограниченными возможностями и гости уважаемого возраста (>65 лет) смогут прийти на фестиваль бесплатно по предварительной заявке, отправленной на адрес info@petshopdays.com</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Как добраться до фестиваля?</h4>
+              <p class="text_normal">Креативное пространство «Ткачи» расположено в центре Петербурга на набережной Обводного канала, в трех минутах от станции метро «Обводный канал». Вы также может добраться до места проведения фестиваля на 65 автобусе от метро Балтийская.</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Есть ли зоны для парковки машин у места проведения фестиваля?</h4>
+              <p class="text_normal">Вокруг креативного пространства организована бесплатная публичная парковка.  Вы также можете воспользоваться обширной парковкой напротив гипермаркета «Ашан», расположенного недалеко от Ткачей.</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Еда и напитки</h4>
+              <p class="text_normal">Приходить на Petshop Days со своей едой и напитками запрещено (кроме детского питания для гостей с детьми). На территории мероприятия будут представлен рестораны и точки питания, где вы можете полноценно и вкусно поесть.</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Способы оплаты на фестивале</h4>
+              <p class="text_normal">К сожалению, пространство «Ткачи» не оборудовано банкоматами. Точки питания и сувенирной продукции принимают наличные. Некоторые участники локации «Маркет» принимают также кредитные карты — уточняйте этот вопрос перед оплатой покупки.</p>
+            </li>
+            <li class="faq__list-item">
+              <h4 class="title_blue faq__item-title">Пускают ли на фестиваль с собаками?</h4>
+              <p class="text_normal">Конечно, да! Мы ждем всех ваших питомцев, и не только собак, - накормим, сфотографируем, организуем специальную зону для выгула. Но вот владельцам котов следует задуматься - на фестивале ожидается очень много собак. </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="sponsors" id="sponsors">
+        <div class="container sponsors__wrap">
+          <h2 class="title_h2 sponsors__title">Спонсоры</h2>
+          <ul class="sponsors__list first">
+            <li class="sponsors__item ps"><img src="assets/img/logo/petshop.svg"></li>
+            <li class="sponsors__item ib"><img src="assets/img/logo/ibody.svg"></li>
+          </ul>
+          <ul class="sponsors__list second">
+            <li class="sponsors__item almo"><img src="assets/img/logo/almo.svg"></li>
+            <li class="sponsors__item now"><img src="assets/img/logo/now.svg"></li>
+            <li class="sponsors__item go"><img src="assets/img/logo/go.svg"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="map" id="map">
+        <div class="map__popup shadow">
+          <h2 class="title_h2 map__popup-title">Место проведения</h2>
+          <p class="map__popup-date">30/09-01/10</p>
+          <p class="map__popup-place">Санкт-Петербург,<span class="main-head__place-link">Ткачи</span></p>
+          <p class="text_light">Набережная Обводного канала, 60</p>
+          <p class="text_light">Станция метро “Обводный канал”</p>
+          <p class="map__popup-cost">Стоимость билетов: 200 <span class="rub">5</span></p><a class="btn map__popup-btn">купить билет</a>
+        </div>
+        <div id="mapkit-7181"></div>
+      </section>
+      <footer class="main-foot">
+        <div class="container main-foot__wrap clearfix">
+          <div class="main-foot__logo"></div>
+          <ul class="main-foot__social-list">
+            <li class="social__item vk"><a class="icon icon-vk" href="#"></a></li>
+            <li class="social__item inst"><a class="icon icon-inst" href="#"></a></li>
+            <li class="social__item fb"><a class="icon icon-fb" href="#"></a></li>
+          </ul>
+          <div class="main-foot__info">
+            <p class="main-foot__info-email"><a class="text_blue">info@petshopdays.ru </a></p>
+            <p class="main-foot__info-phone"><a class="text_blue">+7-964-364-88-67</a></p>
+          </div>
+        </div>
+      </footer>
+      <div class="main-topline">
+        <div class="container">
+          <p class="text_normal">Все права защищены. Petshop Days 2017 (c)</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
