@@ -37,6 +37,9 @@
     transform: translateY(-100%);
     transition: all 0.4s ease;
   }
+  @media(max-width: @brakepoint-small) {
+    padding-bottom: 20px;
+  }
 }
 
 .main-menu__wrap {
@@ -59,15 +62,18 @@
   border: 10px solid @white;
   z-index: 10;
   transition: 0.3s;
-
+  &:hover {
+    box-shadow: 0 0 20px 3px @orange;
+  }
   @media(max-width: @brakepoint-medium) {
     display: block;
     position: absolute;
     right: 20px;
     top: 22px;
   }
-  &:hover {
-    box-shadow: 0 0 20px 3px @orange;
+  @media(max-width: @brakepoint-small) {
+    right: 10px;
+    top: 10px;
   }
 }
 
@@ -84,6 +90,12 @@
   }
   @media(max-width: @brakepoint-medium) {
     display: block;
+  }
+  @media(max-width: @brakepoint-small) {
+    top: 25px;
+    right: 22px;
+    width: 25px;
+    height: 25px;
   }
 }
 
@@ -130,6 +142,13 @@
       .visible;
       margin-bottom: 70px;
     }
+    @media(max-width: @brakepoint-small) {
+      width: 118px;
+      height: 55px;
+      left: 0;
+      top: 20px;
+      margin-bottom: 45px;
+    }
   }
   &.buy {
     @media(max-width: @brakepoint-medium) {
@@ -150,6 +169,14 @@
         text-decoration: none;
       }
     }
+    @media(max-width: @brakepoint-small) {
+      margin-top: 20px;
+      padding: 0 4px;
+      a {
+        font-size: 20px;
+        line-height: 50px;
+      }
+    }
   }
   @media(max-width: @brakepoint-large) {
     margin-right: 15px;
@@ -160,6 +187,12 @@
     a {
       font-size: 30px;
       line-height: 72px;
+    }
+  }
+  @media(max-width: @brakepoint-small) {
+    a {
+      font-size: 24px;
+      line-height: 44px;
     }
   }
 }
@@ -189,6 +222,26 @@
       &.fb a {
         background-size: 17px;
         background-position: 19px
+      }
+    }
+  }
+  @media(max-width: @brakepoint-small) {
+    margin-top: 28px;
+    .social__item {
+      width: 38px;
+      height: 38px;
+      margin-right: 10px;
+      &.vk a {
+        background-size: 26px;
+        background-position: 6px
+      }
+      &.inst a {
+        background-size: 25px;
+        background-position: 7px
+      }
+      &.fb a {
+        background-size: 10px;
+        background-position: 14px
       }
     }
   }

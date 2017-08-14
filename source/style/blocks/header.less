@@ -17,6 +17,12 @@
     min-height: 610px;
     height: 100vh;
   }
+  @media(max-width: @brakepoint-small) {
+    min-height: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .main-head__wrap {
@@ -29,6 +35,18 @@
   @media(max-width: @brakepoint-large) {
     padding-left: 60px;
   }
+  @media(max-width: @brakepoint-small) {
+    position: relative;
+    top: 0;
+    left: 0; right: 0;
+    transform: translateY(0);
+    margin: 0;
+    padding-top: 100px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 45px;
+
+  }
 
 }
 
@@ -36,6 +54,11 @@
   margin-bottom: 79px;
   @media(max-width: @brakepoint-large) {
     margin-bottom: 68px;
+  }
+  @media(max-width: @brakepoint-small) {
+    width: 172px;
+    height: 80px;
+    margin-bottom: 18px;
   }
 }
 
@@ -49,18 +72,29 @@
   @media(max-width: @brakepoint-medium) {
     width: 100%;
   }
+  @media(max-width: @brakepoint-small) {
+    line-height: 44px;
+    margin-bottom: 32px;
+  }
 }
 
 .main-head__date {
-font-size: 30px;
-line-height: 20px;
-text-transform: uppercase;
+  font-size: 30px;
+  line-height: 20px;
+  text-transform: uppercase;
+  @media(max-width: @brakepoint-small) {
+    font-size: 24px;
+  }
 }
 
 .main-head__place {
   font-size: 30px;
   line-height: 20px;
   margin-bottom: 30px;
+  @media(max-width: @brakepoint-small) {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
 }
 
 .main-head__place-link {
@@ -68,4 +102,7 @@ text-transform: uppercase;
   line-height: 60px;
   font-family: @DinBold;
   text-transform: uppercase;
+  @media(max-width: @brakepoint-small) {
+    font-size: 26px;
+  }
 }

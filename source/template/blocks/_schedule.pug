@@ -6,9 +6,10 @@ section.schedule#schedule
       .toggle-tabs
         a.toggle-tab-1.tab.j-sc-link-1.active 1 день
         a.toggle-tab-2.tab.j-sc-link-2 2 день
+      
+    div.j-sc-tab-1
       h3.schedule__subtitle 30 сентября
-    div
-      ul.schedule__list.j-sc-tab-1
+      ul.schedule__list
         //- открытие фестиваля
         li.schedule__item.center.clearfix
           span.schedule__item-time 10:00
@@ -51,14 +52,14 @@ section.schedule#schedule
           span.schedule__item-title Заырытие фестиваля
           
           
-          
           //- tab2
-          
-      ul.schedule__list.j-sc-tab-2
+    div.j-sc-tab-2
+      h3.schedule__subtitle 31 сентября
+      ul.schedule__list
         //- открытие фестиваля
         li.schedule__item.center.clearfix
           span.schedule__item-time 10:00
-          span.schedule__item-title Открытие фестиваля (День 2)
+          span.schedule__item-title Открытие фестиваля
           
         mixin schedule-item(time, title, name)
           li.schedule__item.center.clearfix

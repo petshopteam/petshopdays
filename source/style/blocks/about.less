@@ -7,6 +7,10 @@
     padding-top: 55px;
     background-color: @main-bg-color;
   }
+  @media(max-width: @brakepoint-small) {
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
 
 .about__wrap {
@@ -16,6 +20,12 @@
   }
   @media(max-width: @brakepoint-medium) {
     padding-left: 15px;
+  }
+  @media(max-width: @brakepoint-small) {
+    padding-left: 20px;
+    margin-right: 20px;
+    margin: 0;
+    padding-bottom: 15px;
   }
 }
 
@@ -27,10 +37,16 @@
     width: 100%;
     margin-bottom: 42px;
   }
+  @media(max-width: @brakepoint-small) {
+    margin-bottom: 30px;
+  }
 }
 
 .about__title {
   margin-bottom: 40px;
+  @media(max-width: @brakepoint-small) {
+    margin-bottom: 3px;
+  }
 }
 
 .about__advantages {
@@ -44,6 +60,13 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+  }
+  @media(max-width: @brakepoint-medium) {
+    float: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
 }
 
@@ -69,6 +92,11 @@
     display: inline-block;
     width: auto;
     margin-right: 0;
+  }
+  @media(max-width: @brakepoint-small) {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
   }
 }
 
@@ -292,6 +320,11 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M86.9%2C10.7c0%2C5.5-4.4%2C10.7-11.3%2C10.7c-7.1%2C0-11.1-4.9-11.1-10.7C64.5%2C5.2%2C68.9%2C0%2C75.9%2C0%0D%0A%09%09C82.9%2C0%2C86.9%2C4.9%2C86.9%2C10.7z%20M35.5%2C10.7c0%2C5.5-4.4%2C10.7-11.3%2C10.7c-7.1%2C0-11.1-4.9-11.1-10.7C13.1%2C5.2%2C17.5%2C0%2C24.4%2C0%0D%0A%09%09C31.5%2C0%2C35.5%2C4.9%2C35.5%2C10.7z%22/%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M46.5%2C66.1h12.5c0%2C6.1%2C0.7%2C10.4%2C2.1%2C12.5c2.4%2C3.9%2C6.3%2C5.7%2C11.6%2C5.7c4.1%2C0%2C7.5-1.3%2C10.1-4.1%0D%0A%09%09%09c2.7-2.7%2C4-6.3%2C4-10.5c0-4-0.9-7.2-2.9-9.5c-2-2.1-5.3-3.7-10.1-4.8V40.9c9.1%2C1.5%2C15.7%2C4.5%2C20%2C9.3c4%2C4.5%2C6.1%2C11.1%2C6.1%2C19.5%0D%0A%09%09%09c0%2C8.5-2.5%2C15.3-7.5%2C20.8c-4.9%2C5.3-11.3%2C8-19.2%2C8c-8.8%2C0-15.7-3.5-20.7-10.5c-4.7%2C8-12.4%2C12-22.9%2C12c-8.7%2C0-15.7-2.9-21.3-8.8%0D%0A%09%09%09C2.8%2C85.5%2C0%2C78%2C0%2C68.8c0-11.6%2C4.3-20.3%2C12.8-26c3.6-2.4%2C8.5-3.9%2C14.9-4.4v14.1c-4.7%2C0.8-8.3%2C2.5-10.8%2C5.5%0D%0A%09%09%09c-2.5%2C2.9-3.7%2C6.7-3.7%2C11.3s1.6%2C8.7%2C4.7%2C11.7c3.2%2C3.1%2C7.3%2C4.7%2C12.3%2C4.7c6.5%2C0%2C11.2-2.3%2C13.9-6.9C45.7%2C76%2C46.5%2C71.9%2C46.5%2C66.1z%22/%3E%0D%0A%09%3C/g%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
+      }
     }
   }
   // Петшоп.ру
@@ -304,6 +337,11 @@
       background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20132.9%20147.1%22%0D%0A%09%20enable-background%3D%22new%200%200%20132.9%20147.1%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23E6664B%22%20d%3D%22M121.1%2C15.7c0%2C8.1-6.5%2C15.7-16.7%2C15.7c-10.4%2C0-16.3-7.2-16.3-15.7C88.1%2C7.5%2C94.5%2C0%2C104.8%2C0%0D%0A%09%09%09C115.2%2C0%2C121.1%2C7.2%2C121.1%2C15.7z%22/%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23E6664B%22%20d%3D%22M132.9%2C106V65.6H84H72.9H51.7H41.6H20.3H0v22.3h20.3h21.3h10.1V106c0%2C24.9%2C16.9%2C41.1%2C40.6%2C41.1%0D%0A%09%09%09S132.9%2C130.9%2C132.9%2C106z%20M72.9%2C102.8V87.8h38.7v14.9c0%2C15.1-8%2C22.1-19.4%2C22.1S72.9%2C117.8%2C72.9%2C102.8z%22/%3E%0D%0A%09%3C/g%3E%0D%0A%09%3Crect%20x%3D%227.5%22%20y%3D%226.4%22%20fill%3D%22%23E6664B%22%20width%3D%2237.8%22%20height%3D%2218.6%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%224.8%200%2090.3%20100%22%0D%0A%09%20enable-background%3D%22new%204.8%200%2090.3%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cg%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M87.2%2C10.7c0%2C5.5-4.4%2C10.7-11.4%2C10.7c-7.1%2C0-11.1-4.9-11.1-10.7C64.7%2C5.1%2C69.1%2C0%2C76.1%2C0%0D%0A%09%09%09C83.1%2C0%2C87.2%2C4.9%2C87.2%2C10.7z%22/%3E%0D%0A%09%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M95.2%2C72.1V44.6H61.9h-7.5H40h-6.9H18.6H4.8v15.2h13.8h14.5H40v12.3C40%2C89%2C51.5%2C100%2C67.6%2C100%0D%0A%09%09%09S95.2%2C89%2C95.2%2C72.1z%20M54.4%2C69.9V59.7h26.3v10.1c0%2C10.3-5.4%2C15-13.2%2C15S54.4%2C80.1%2C54.4%2C69.9z%22/%3E%0D%0A%09%3C/g%3E%0D%0A%09%3Crect%20x%3D%229.9%22%20y%3D%224.4%22%20fill%3D%22%23FFFFFF%22%20width%3D%2225.7%22%20height%3D%2212.6%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+      }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
       }
     }
   }
@@ -318,6 +356,10 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0421%u043B%u043E%u0439_1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%2222.9%200%2054.1%20100%22%20enable-background%3D%22new%2022.9%200%2054.1%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Crect%20x%3D%2229.7%22%20y%3D%2267.3%22%20fill%3D%22%23FFFFFF%22%20width%3D%2247.3%22%20height%3D%2211.7%22/%3E%0D%0A%09%3Crect%20x%3D%2223%22%20y%3D%2288.3%22%20fill%3D%22%23FFFFFF%22%20width%3D%2247.3%22%20height%3D%2211.7%22/%3E%0D%0A%09%0D%0A%09%09%3Crect%20x%3D%2237.9%22%20y%3D%22-2.8%22%20transform%3D%22matrix%280.7071%200.7071%20-0.7071%200.7071%2027.5713%20-24.861%29%22%20fill%3D%22%23FFFFFF%22%20width%3D%2211.7%22%20height%3D%2247.3%22/%3E%0D%0A%09%3Crect%20x%3D%2223%22%20y%3D%2246.4%22%20fill%3D%22%23FFFFFF%22%20width%3D%2247.3%22%20height%3D%2211.7%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small){
+        width: 20px;
+        height: 37px;
+      }
     }
   }
   // Фотозона (1)
@@ -329,6 +371,11 @@
       background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20117%2099.7%22%0D%0A%09%20enable-background%3D%22new%200%200%20117%2099.7%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23D57476%22%20d%3D%22M13.6%2C12.9v73.9h19.3v12.9H0V0h32.9v12.9H13.6z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23D57476%22%20d%3D%22M117%2C99.7H84.1V86.8h19.3V12.9H84.1V0H117V99.7z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M11.6%2C18.4v63.2h16.5v11H0V7.4h28.1v11H11.6z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M100%2C92.6H71.9v-11h16.5V18.4H71.9v-11H100V92.6z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+      }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
       }
     }
   }
@@ -344,6 +391,11 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%2037.1%20100%2025.9%22%0D%0A%09%20enable-background%3D%22new%200%2037.1%20100%2025.9%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Ccircle%20fill%3D%22%23FFFFFF%22%20cx%3D%2212.9%22%20cy%3D%2250%22%20r%3D%2212.9%22/%3E%0D%0A%09%3Ccircle%20fill%3D%22%23FFFFFF%22%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2212.9%22/%3E%0D%0A%09%3Ccircle%20fill%3D%22%23FFFFFF%22%20cx%3D%2287.1%22%20cy%3D%2250%22%20r%3D%2212.9%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 21px !important;
+      }
     }
   }
   // Приюты
@@ -357,6 +409,11 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M46.3%2C94.1l3.7%2C2.2l3.7-2.2C84.8%2C74.2%2C100%2C54.9%2C100%2C34.8c0-18.1-12.5-31.3-29.8-31.3c-8.1%2C0-14.7%2C2.7-19.7%2C8%0D%0A%09l-0.7%2C0.7l-0.7-0.7c-4.6-5.3-11.2-8-19.4-8C12.5%2C3.5%2C0%2C16.7%2C0%2C35.1C0%2C54.9%2C15.2%2C74.3%2C46.3%2C94.1z%20M29.8%2C17c0.4%2C0%2C1%2C0%2C1.5%2C0.1%0D%0A%09c0.3%2C0%2C0.4%2C0%2C0.6%2C0c6.7%2C0.7%2C14.6%2C4.5%2C18.1%2C12.5c3.5-8%2C11.4-11.7%2C18.1-12.5c0.1%2C0%2C0.3%2C0%2C0.6%2C0c0.7%2C0%2C1.1-0.1%2C1.5-0.1%0D%0A%09c10%2C0%2C16.3%2C7.2%2C16.3%2C18.1c0%2C9.6-6.2%2C25.1-36.1%2C45.1L50%2C80.5l-0.4-0.3C19.7%2C60.1%2C13.5%2C44.5%2C13.5%2C35C13.5%2C24%2C19.8%2C17%2C29.8%2C17z%22/%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 12px !important;
+      }
     }
   }
   // Здоровье
@@ -368,6 +425,11 @@
       background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%2065.9%2065.9%22%0D%0A%09%20enable-background%3D%22new%200%200%2065.9%2065.9%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Crect%20x%3D%2224.6%22%20y%3D%220%22%20fill%3D%22%2364BB9F%22%20width%3D%2216.8%22%20height%3D%2265.9%22/%3E%0D%0A%09%3Crect%20x%3D%220%22%20y%3D%2224.6%22%20fill%3D%22%2364BB9F%22%20width%3D%2265.9%22%20height%3D%2216.8%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Crect%20x%3D%2237.3%22%20fill%3D%22%23FFFFFF%22%20width%3D%2225.5%22%20height%3D%22100%22/%3E%0D%0A%09%3Crect%20y%3D%2237.3%22%20fill%3D%22%23FFFFFF%22%20width%3D%22100%22%20height%3D%2225.5%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+      }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
       }
     }
   }
@@ -381,6 +443,11 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M17.7%2C98L24%2C85.6c-5.5-1.9-10.7-6.5-10.3-12.8c0.2-2.7%2C1.1-5.5%2C2.9-8.6l13-22.1c2.7-4.8%2C4.2-9.5%2C4.6-14.3%0D%0A%09%09c0.8-11-6.3-21.3-17.9-25.9L9.9%2C14.4c5.5%2C1.9%2C10.9%2C6.5%2C10.5%2C12.8c-0.2%2C2.7-1.1%2C5.5-2.9%2C8.6l-13%2C21.9C1.9%2C62.4%2C0.4%2C67.1%2C0%2C71.9%0D%0A%09%09C-0.8%2C83%2C6.3%2C93.2%2C17.7%2C98z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M50.7%2C98L57%2C85.6c-5.5-1.9-10.7-6.5-10.3-12.8c0.2-2.7%2C1.1-5.5%2C2.9-8.6l13-22.1c2.7-4.8%2C4.2-9.5%2C4.6-14.3%0D%0A%09%09c0.8-11-6.3-21.3-17.9-25.9l-6.3%2C12.4c5.5%2C1.9%2C10.9%2C6.5%2C10.5%2C12.8c-0.2%2C2.7-1.1%2C5.5-2.9%2C8.6l-13%2C22.1c-2.7%2C4.8-4.2%2C9.5-4.6%2C14.3%0D%0A%09%09C32.2%2C83%2C39.2%2C93.2%2C50.7%2C98z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M83.6%2C98l6.3-12.4c-5.5-1.9-10.7-6.5-10.3-12.8c0.2-2.7%2C1.1-5.5%2C2.9-8.6l13-22.1c2.7-4.8%2C4.2-9.5%2C4.6-14.3%0D%0A%09%09c1-11-6.3-21.3-17.7-25.9L76%2C14.4c5.5%2C1.9%2C10.9%2C6.5%2C10.5%2C12.8c-0.2%2C2.7-1.1%2C5.5-2.9%2C8.6l-13%2C22.1c-2.7%2C4.8-4.2%2C9.5-4.6%2C14.3%0D%0A%09%09C65.1%2C83%2C72.2%2C93.2%2C83.6%2C98z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
+      }
     }
   }
   // Фотозона (2)
@@ -392,6 +459,11 @@
       background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20117%2099.7%22%0D%0A%09%20enable-background%3D%22new%200%200%20117%2099.7%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23D57476%22%20d%3D%22M13.6%2C12.9v73.9h19.3v12.9H0V0h32.9v12.9H13.6z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23D57476%22%20d%3D%22M117%2C99.7H84.1V86.8h19.3V12.9H84.1V0H117V99.7z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%200%20100%20100%22%0D%0A%09%20enable-background%3D%22new%200%200%20100%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M11.6%2C18.4v63.2h16.5v11H0V7.4h28.1v11H11.6z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M100%2C92.6H71.9v-11h16.5V18.4H71.9v-11H100V92.6z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+      }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
       }
     }
   }
@@ -406,6 +478,11 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%2221.8%200%2056.4%20100%22%0D%0A%09%20enable-background%3D%22new%2021.8%200%2056.4%20100%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M78.2%2C23.9c0%2C12.4-7.4%2C19.6-16.5%2C27.9c-5.6%2C5.2-6.1%2C8.5-6.1%2C12.2H41.7c0-9.2%2C1.1-14.4%2C7.8-21.1%0D%0A%09%09c8.2-8.3%2C12.4-12%2C12.4-19c0-5.6-4.5-8.3-10.1-8.3c-4.6%2C0-11.1%2C1.9-16.4%2C10.8l-13.5-7.9C29.2%2C5.7%2C41%2C0%2C52.3%2C0%0D%0A%09%09C68.1%2C0%2C78.2%2C8.6%2C78.2%2C23.9z%20M49.5%2C75.8c6%2C0%2C11.5%2C4.7%2C11.5%2C12.2c0%2C7.6-5.3%2C12-11.5%2C12c-6%2C0-11.5-4.7-11.5-12.2%0D%0A%09%09C37.9%2C80.1%2C43.2%2C75.8%2C49.5%2C75.8z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 10px !important;
+      }
     }
   }
   // Дети
@@ -419,7 +496,16 @@
       @media(max-width: @brakepoint-medium) {
         background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2018.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-//W3C//DTD%20SVG%201.1//EN%22%20%22http%3A//www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.1%22%20id%3D%22%u0420%u0435%u0436%u0438%u043C_%u0438%u0437%u043E%u043B%u044F%u0446%u0438%u0438%22%0D%0A%09%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%20viewBox%3D%220%2033.9%20100%2032.2%22%0D%0A%09%20enable-background%3D%22new%200%2033.9%20100%2032.2%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M27.6%2C66.1l-7.2-18.7l-7.3%2C18.7H0l14.5-32.2h11.9l14.5%2C32.2H27.6z%22/%3E%0D%0A%09%3Cpath%20fill%3D%22%23FFFFFF%22%20d%3D%22M86.9%2C66.1l-7.3-18.7L72.4%2C66H59.2l14.4-32.1h11.9L100%2C66.1H86.9z%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
       }
+      @media(max-width: @brakepoint-small) {
+        width: 27px;
+        height: 27px;
+        top: 20px !important;
+      }
     }
+  }
+  // media ко всем титулам
+  @media(max-width: @brakepoint-small) {
+    padding-left: 20px;
   }
 }
 
@@ -480,6 +566,17 @@
     margin: 0;
     margin-bottom: 33px;
     cursor: pointer;
+    @media(max-width: @brakepoint-small) {
+      padding-left: 36px;
+      margin-bottom: 0;
+      &::before {
+        top: 0;
+      }
+    }
+  }
+  @media(max-width: @brakepoint-small) {
+    padding: 20px;
+    padding-bottom: 10px;
   }
 }
 
@@ -495,5 +592,11 @@
   z-index: 40;
   &.toggle {
     transform: rotate(0);
+  }
+  @media(max-width: @brakepoint-small) {
+    width: 24px;
+    height: 15px;
+    top:40px;
+    right:10px;
   }
 }

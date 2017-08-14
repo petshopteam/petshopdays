@@ -15,17 +15,29 @@
     margin-left: 20px;
     padding-right: 35px;
   }
+  @media(max-width: @brakepoint-medium) {
+    margin-left: 20px;
+    padding-right: 10px;
+  }
 }
 
 .faq__title {
   text-transform: uppercase;
   margin-bottom: 40px;
+  @media(max-width: @brakepoint-small) {
+    margin-bottom: 0;
+  }
 }
 
 .faq__subtitle {
   font-family: @DinRegular;
   font-weight: 500;
   margin-bottom: 34px;
+  @media(max-width: @brakepoint-small) {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 23px;
+  }
 }
 
 .faq__list {
@@ -66,8 +78,18 @@
       margin-right: 0;
     }
   }
+  @media(max-width: @brakepoint-small) {
+    margin-bottom: 13px;
+    &.text_normal {
+      font-size: 14px;
+      line-height: 20px;
+    }
+  }
 }
 
-.faq__item-title {
+.faq__item-title { //subtitle (blue)
   margin-bottom: 20px;
+  @media(max-width: @brakepoint-small) {
+    margin-bottom: 0;
+  }
 }
