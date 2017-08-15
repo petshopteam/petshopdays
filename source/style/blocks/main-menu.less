@@ -5,10 +5,11 @@
   // top: 0;
   // transform: translateY(-100%);
   background-color: @white;
+  z-index: 2;
   &.active {
     position: fixed;
     top: 0;
-    z-index: 10;
+    z-index: 11;
     // скрываю соц.иконки в fixed меню на 980px
     .main-menu__social {
       @media(max-width: @brakepoint-large) {
@@ -38,7 +39,7 @@
     transition: all 0.4s ease;
   }
   @media(max-width: @brakepoint-small) {
-    padding-bottom: 20px;
+    padding-bottom: 21px;
   }
 }
 
@@ -72,8 +73,8 @@
     top: 22px;
   }
   @media(max-width: @brakepoint-small) {
-    right: 10px;
     top: 10px;
+    right: 10px;
   }
 }
 
@@ -85,6 +86,7 @@
   position: absolute;
   top: 41px;
   right: 30px;
+  z-index: 10;
   &:hover {
     opacity: 0.7;
   }
@@ -92,8 +94,6 @@
     display: block;
   }
   @media(max-width: @brakepoint-small) {
-    top: 25px;
-    right: 22px;
     width: 25px;
     height: 25px;
   }
@@ -145,9 +145,8 @@
     @media(max-width: @brakepoint-small) {
       width: 118px;
       height: 55px;
+      top: 21;
       left: 0;
-      top: 20px;
-      margin-bottom: 45px;
     }
   }
   &.buy {
@@ -171,8 +170,10 @@
     }
     @media(max-width: @brakepoint-small) {
       margin-top: 20px;
-      padding: 0 4px;
+      padding: 0 1px;
       a {
+        width: 100%;
+        height: 100%;
         font-size: 20px;
         line-height: 50px;
       }
@@ -226,21 +227,19 @@
     }
   }
   @media(max-width: @brakepoint-small) {
-    margin-top: 28px;
     .social__item {
       width: 38px;
       height: 38px;
-      margin-right: 10px;
       &.vk a {
-        background-size: 26px;
+        background-size: 25px;
         background-position: 6px
       }
       &.inst a {
-        background-size: 25px;
-        background-position: 7px
+        background-size: 22px;
+        background-position: 8px
       }
       &.fb a {
-        background-size: 10px;
+        background-size: 11px;
         background-position: 14px
       }
     }

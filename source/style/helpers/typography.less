@@ -46,21 +46,21 @@ h1 {
   font-family: @DinBold;
   font-size: 48px;
   line-height: 55px;
-  @media(max-width: @brakepoint-small){
+  @media(max-width: @brakepoint-small) {
     font-size: 30px;
-    line-height: 55px;
+    line-height: 40px;
   }
 }
 
 .title_h3 {
-  color: @black;
-  font-family: @DinBold;
-  font-size: 30px;
-  line-height: 36px;
-  @media(max-width: @brakepoint-small){
-    font-size: 20px;
-    line-height: 26px;
-  }
+color: @black;
+font-family: @DinBold;
+font-size: 30px;
+line-height: 36px;
+@media(max-width: @brakepoint-small) {
+  font-size: 20px;
+  line-height: 26px;
+}
 }
 
 .title_h4 {
@@ -68,6 +68,10 @@ color: @black;
 font-family: @DinRegular;
 font-size: 16px;
 line-height: 22px;
+@media(max-width: @brakepoint-small) {
+font-size: 14px;
+line-height: 18px;
+}
 }
 
 .title_blue {
@@ -84,14 +88,14 @@ line-height: 22px;
 
 // text
 .text_normal {
-  color: @black;
-  font-family: @DinNormal;
-  font-size: 16px;
+color: @black;
+font-family: @DinNormal;
+font-size: 16px;
+line-height: 24px;
+@media(max-width: @brakepoint-small) {
+  font-size: 14px;
   line-height: 24px;
-  @media(max-width: @brakepoint-small){
-    font-size: 14px;
-    line-height: 21px;
-  }
+}
 }
 
 .text_light {
@@ -99,10 +103,10 @@ color: @black;
 font-family: @DinLight;
 font-size: 16px;
 line-height: 24px;
-@media(max-width: @brakepoint-small){
+@media(max-width: @brakepoint-small) {
   font-size: 14px;
-  line-height: 21px;
-  }
+  line-height: 18px;
+}
 }
 
 .text_blue {
@@ -110,10 +114,7 @@ line-height: 24px;
   font-family: @DinRegular;
   font-size: 16px;
   line-height: 22px;
-  @media(max-width: @brakepoint-small) {
-    font-size: 14px;
-    line-height: 18px;
-  }
+
 }
 
 .text_orange {
@@ -143,6 +144,10 @@ line-height: 24px;
   color: #576269;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
 // КНОПКИ
 
 .btn {
@@ -156,12 +161,10 @@ line-height: 24px;
   text-transform: uppercase;
   border-radius: 2px;
   transition: background-color 0.3s;
+  z-index: 3;
   &:hover {
     text-decoration: none;
     background-color: @darkorange;
-  }
-  @media(max-width: @brakepoint-small) {
-    font-family: @DinRegular;
   }
 }
 
@@ -220,10 +223,9 @@ line-height: 24px;
     margin-top: 10px;
   }
   @media(max-width: @brakepoint-small) {
+    float: none;
+    display: block;
     width: 100%;
-    float: left;
-    margin: 0;
-    padding: 0;
   }
 }
 
@@ -250,11 +252,5 @@ line-height: 24px;
   &.active {
     color: @white;
     background-color: @blue;
-  }
-  @media(max-width: @brakepoint-small) {
-    font-size: 17px;
-    line-height: 1.9em;
-    padding: 0 0.4em;
-    margin-right: 10px;
   }
 }

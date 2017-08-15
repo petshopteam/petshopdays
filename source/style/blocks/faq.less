@@ -1,6 +1,8 @@
 .faq {
   padding-bottom: 52px;
   background-color: @main-bg-color;
+  z-index: 10;
+  overflow: hidden;
   @media(max-width: @brakepoint-large) {
     padding-bottom: 10px;
   }
@@ -25,7 +27,7 @@
   text-transform: uppercase;
   margin-bottom: 40px;
   @media(max-width: @brakepoint-small) {
-    margin-bottom: 0;
+    margin-bottom: 10px;
   }
 }
 

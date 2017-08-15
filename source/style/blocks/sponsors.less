@@ -1,6 +1,8 @@
 .sponsors {
   padding-bottom: 15px;
   background-color: @main-bg-color;
+  z-index: 10;
+  overflow: hidden;
   @media(max-width: @brakepoint-large) {
     padding-bottom: 37px;
   }
@@ -10,6 +12,13 @@
   @media(max-width: @brakepoint-small) {
     padding-top: 37px;
   }
+}
+
+.sponsors__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .sponsors__wrap {
@@ -29,7 +38,7 @@
 .sponsors__title {
   margin-bottom: 70px;
   @media(max-width: @brakepoint-small) {
-    margin-bottom: 28px;
+    margin-bottom: 38px;
   }
 }
 

@@ -3,6 +3,8 @@
   background-color: @main-bg-color;
   padding-top: 92px;
   padding-bottom: 60px;
+  z-index: 10;
+  overflow: hidden;
   @media(max-width: @brakepoint-medium) {
     padding-top: 55px;
     background-color: @main-bg-color;
@@ -11,6 +13,20 @@
     padding-top: 35px;
     padding-bottom: 0;
   }
+}
+
+.about__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about__bg_animal {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .about__wrap {
@@ -45,7 +61,7 @@
 .about__title {
   margin-bottom: 40px;
   @media(max-width: @brakepoint-small) {
-    margin-bottom: 3px;
+    margin-bottom: 25px;
   }
 }
 
@@ -99,6 +115,7 @@
     margin-bottom: 20px;
   }
 }
+
 
 .about__map {
   margin-top: 110px;
@@ -323,7 +340,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 10px !important;
+        top: 6px !important;
       }
     }
   }
@@ -375,7 +392,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 10px !important;
+        top: 8px !important;
       }
     }
   }
@@ -394,7 +411,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 21px !important;
+        top: 17px !important;
       }
     }
   }
@@ -412,7 +429,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 12px !important;
+        top: 8px !important;
       }
     }
   }
@@ -446,7 +463,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 10px !important;
+        top: 6px !important;
       }
     }
   }
@@ -499,7 +516,7 @@
       @media(max-width: @brakepoint-small) {
         width: 27px;
         height: 27px;
-        top: 20px !important;
+        top: 17px !important;
       }
     }
   }
@@ -567,8 +584,9 @@
     margin-bottom: 33px;
     cursor: pointer;
     @media(max-width: @brakepoint-small) {
+      position: relative;
       padding-left: 36px;
-      margin-bottom: 0;
+      margin-bottom: 12px;
       &::before {
         top: 0;
       }
@@ -577,6 +595,7 @@
   @media(max-width: @brakepoint-small) {
     padding: 20px;
     padding-bottom: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -596,7 +615,7 @@
   @media(max-width: @brakepoint-small) {
     width: 24px;
     height: 15px;
-    top:40px;
+    top:36px;
     right:10px;
   }
 }

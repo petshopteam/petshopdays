@@ -1,5 +1,14 @@
+
+
+
 //- schedule
-section.schedule#schedule
+section.schedule#schedule.relative
+  
+  .schedule__bg.parallax-figures.parallax-figures_schedule
+    .rellax(data-rellax-speed="2", data-rellax-percentage="0.5")
+      img(src="assets/img/background/schedule-figures.png")
+  
+  
   .container.schedule__wrap
     .clearfix
       h2.title_h2.schedule__title Расписание
@@ -52,10 +61,11 @@ section.schedule#schedule
           span.schedule__item-title Заырытие фестиваля
           
           
+          
           //- tab2
     div.j-sc-tab-2
       h3.schedule__subtitle 31 сентября
-      ul.schedule__list
+      ul.schedule__list.j-sc-tab-2
         //- открытие фестиваля
         li.schedule__item.center.clearfix
           span.schedule__item-time 10:00

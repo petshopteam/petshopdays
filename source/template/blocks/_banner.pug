@@ -1,6 +1,11 @@
 //- banner
-section.banner
+section.banner.relative
+  
+  .banner__bg.parallax-figures.parallax-figures_banner
+    .rellax(data-rellax-speed="3", data-rellax-percentage="0.5")
+      img(src="assets/img/background/banner-figures.png")
+  
   .container.banner__wrap
     img.banner__logo.icon(src="assets/img/svg/blogger.svg")
-    a.banner__btn.btn Подробнее
+    a.banner__btn.btn(href="#", target="_blank") Подробнее
     

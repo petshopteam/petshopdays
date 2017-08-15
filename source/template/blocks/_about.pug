@@ -1,4 +1,30 @@
-section.about#about
+section.about#about.relative
+  
+  
+  //- parallax (figures)
+  .about__bg.parallax-figures.parallax-figures_about  
+    .rellax(data-rellax-speed="2", data-rellax-percentage="0.5")
+      img(src="assets/img/background/about-figures.png")
+      
+      
+  //- parallax (animals)
+  .about__bg_animal.parallax-figures.parallax-figures_about_animal
+    //- cat-1
+    .rellax
+      img.about__animal.about__animal-1(src="assets/img/icons/dog-2.png")
+        //- dog-1
+    .rellax(data-rellax-speed="2", data-rellax-percentage="0.5")
+      img.about__animal.about__animal-2(src="assets/img/icons/cat-2.png")
+        //- dog-2
+    .rellax
+      img.about__animal.about__animal-3(src="assets/img/icons/dog-3.png")
+        //- cat-2
+    .rellax(data-rellax-speed="1", data-rellax-percentage="0.5")
+      img.about__animal.about__animal-4(src="assets/img/icons/cat-1.png")
+        
+        
+    
+  
   .container.clearfix.about__wrap
     h2.title_h2.about__title О фестивале
     .about__description
@@ -23,7 +49,24 @@ section.about#about
     //- map 
   .container
     .about__map.relative
-      .about__map-bg.j-map-bg
+      
+      //- //- cat-1
+      //- .rellax
+      //-   img.about__animal.about__animal-1(src="assets/img/icons/dog-2.png")
+      //-     //- dog-1
+      //- .rellax(data-rellax-speed="2", data-rellax-percentage="0.5")
+      //-   img.about__animal.about__animal-2(src="assets/img/icons/cat-2.png")
+      //-     //- dog-2
+      //- .rellax(data-rellax-speed="3", data-rellax-percentage="0.5")
+      //-   img.about__animal.about__animal-3(src="assets/img/icons/dog-3.png")
+      //-     //- cat-2
+      //- .rellax(data-rellax-speed="3", data-rellax-percentage="0.5")
+      //-   img.about__animal.about__animal-4(src="assets/img/icons/cat-1.png")
+      
+      
+      
+      //- fallback BG (no-parallax)
+      //- .about__map-bg.j-map-bg
       
       //- титулы секций
       

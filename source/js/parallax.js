@@ -2,18 +2,20 @@
 (function() {
   'use strict';
 
-  var scrolled = $(window).scrollTop();
+  // var scrolled = $(window).scrollTop();
+  //
+  // $('.parallax').css('top', -(scrolled) + 'px');
+  //
+  // function parallax(){
+  //   var scrolled = $(window).scrollTop();
+  //   $('.parallax').css('top', -(scrolled * 0.3) + 'px');
+  // }
+  //
+  // $(window).scroll(function(e){
+  //   parallax();
+  // });
 
-  $('.parallax').css('top', -(scrolled) + 'px');
-
-  function parallax(){
-    var scrolled = $(window).scrollTop();
-    $('.parallax').css('top', -(scrolled * 0.3) + 'px');
-  }
-
-  $(window).scroll(function(e){
-    parallax();
-  });
+  var rellax = new Rellax('.rellax');
 
 
 

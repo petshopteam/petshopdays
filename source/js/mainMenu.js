@@ -20,10 +20,12 @@
 
   // Main nav smooth scroll;
 $(".main-menu__list").on("click","a", function (event) {
-    event.preventDefault();
-    var id  = $(this).attr('href'),
-        top = $(id).offset().top;
-    $('body,html').animate({scrollTop: top}, 500);
+    if ($(event.target).hasClass('j-scroll-link')) {
+      event.preventDefault();
+      var id  = $(this).attr('href'),
+          top = $(id).offset().top;
+      $('body,html').animate({scrollTop: top}, 500);
+    }
   });
 
   // Tkachi smooth scroll;

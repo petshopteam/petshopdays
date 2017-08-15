@@ -1,4 +1,10 @@
 header.main-head#header
+  
+  //- parallax-figures (header)
+  .parallax-figures.parallax-figures_header
+    .rellax(data-rellax-speed="5", data-rellax-percentage="0.5")
+      img(src="assets/img/background/header-figures.png")
+  
   //- кнопка toogle-main-menu
   a.main-menu__hidden-btn.j-menu-toggle
   .container
@@ -8,6 +14,7 @@ header.main-head#header
       p.main-head__date 30/09/01/10
       p.main-head__place Санкт-Петербург,
         a.main-head__place-link(href="#map") Ткачи
-      a.btn купить билет за 200 
+      //- a.btn(data-radario-event-id="189019") купить билет за 200 
+      a.btn(href="https://radario.ru/hosts/6331", target="_blank") купить билет за 200 
         i.rub а
     

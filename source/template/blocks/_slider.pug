@@ -1,5 +1,14 @@
 //- SLIDER
-section.slider#missPetshop
+section.slider#missPetshop.relative
+  
+  #vk
+  
+  
+  .slider__bg.parallax-figures.parallax-figures_slider
+    .rellax(data-rellax-speed="3", data-rellax-percentage="0.5")
+      img(src="assets/img/background/slider-figures.png")
+  
+  
   .slider__container.j-slider-container
     .slider__slide.j-slider-slide
     .slider__slide.j-slider-slide
@@ -18,29 +27,27 @@ section.slider#missPetshop
   //- SLIDER-POPUP 
   .slider__popup.shadow
     h2.title_h2.slider__popup-title Miss Petshop
-    p.text_light.slider__popup-text Выложите  фотографию со своим питомцем в любой из социальных сетей, а команда организаторов фестиваля «Pet Shop Days» выбирет финалисток с учетом количества лайков под фото.
-    p.text_light.slider__popup-text Суперпризы  - годовой запас корма, и набор косметики от ibody.ru
+    p.text_light.slider__popup-text Подпишитесь на аккаунты Petshop Days. Публикуйте ваши совместные с питомцем фотографии в Instagram и ВКонтакте с хештегами #misspetshop #petshopdays. Команда организаторов фестиваля "Pet Shop Days" выберет финалисток с учетом количества лайков под фото.  
+    p.text_light.slider__popup-text Суперприз  - годовой запас корма, профессиональная фотосессия с питомцем и возможность попасть на рекламный баннер PETSHOP.RU, а также подарки от спонсоров.
     p.text_light.slider__popup-text Участвовать в конкурсе можно через Instagram с хештегом #MissPetshop
      |  или 
-     a.lined ВКонтакте
+     a.lined(href="https://vk.com/petshop_days?w=wall-149489161_30", target="_blank") ВКонтакте
     p.text_light.slider__popup-text Конкурсы между собой не пересекаются: если вы не попали в число финалисток в одной социальной сети, то сможете испытать судьбу в другой.
-    
-    //- TERMS OF USE (RULES) HIDDEN ! ONLY FOR 320px !!!
-    .slider__terms.clearfix.small
-      ul.slider__terms-list
-        li.slider__terms-item.text_blue на фото вы должны быть со своим питомцем
-        li.slider__terms-item.text_blue можно выкладывать только одно фото
-        li.slider__terms-item.text_blue публиковать можно только собственные фотографии
-        li.slider__terms-item.text_blue в конкурсе могут принимать участие девушки любого возраста
+    p.text_light.slider__popup-text Подробнее о конкурсе можно узнать 
+     a.lined(href="https://vk.com/petshop_days?w=wall-149489161_30", target="_blank") ВКонтакте
+     span  и 
+     a.lined(href="https://www.instagram.com/p/BXptAFuA6KA/?taken-by=petshopdays", target="_blank") Instagram.
     
     .slider__popup-bottom
-      p.text_normal.slider__popup-text Финалистки будут определены 
-        span.text_orange 18 сентября 
+      p.text_normal.slider__popup-text
+        span.text_orange 15 финалисток 
+        | будут определены 
+        span.text_orange 16 сентября 
         | и объявлены в нашей встрече 
-        a.lined ВКонтакте.
-      p.text_normal.slider__popup-text Победительница будет выбрана жюри 
-        span.text_orange 30 сентября 
-        | на фестивале.
+        a.lined(href="https://vk.com/petshop_days?w=wall-149489161_30", target="_blank") ВКонтакте.  
+        |  Победительница будет выбрана жюри 
+        span.text_orange.no-wrap 30 сентября 
+        | на фестивале Petshop Days 
       
   //- TERMS OF USE (RULES)
   .slider__terms.clearfix
