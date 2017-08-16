@@ -113,9 +113,10 @@
 
     function init() {
         var mapOptions = {
-            // center: new google.maps.LatLng(59.9153037,30.341135099999974),
-            center: new google.maps.LatLng(59.9153036,30.343999999999974),
-            zoom: 17,
+            // center: new google.maps.LatLng(59.9153036,30.343999999999974),
+            center: new google.maps.LatLng(59.9153036,30.353999999999974),
+            // zoom: 17,
+            zoom: 15,
             gestureHandling: 'auto',
             fullscreenControl: false,
             zoomControl: true,
@@ -220,6 +221,16 @@
                 bindInfoWindow(marker, map, locations[i]);
             }
         }
+
+        // центрирование карты на мобильных (320px - 767px)
+        var windowSize = document.documentElement.clientWidth;
+        if (windowSize < 768) {
+          map.panTo(marker.getPosition());
+          // mapOptions.zoom = 3;
+        }
+
     }
+
+
 
 }());
