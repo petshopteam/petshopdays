@@ -2,13 +2,14 @@
 
 module.exports = function() {
 
-  // let minifyjs = require('gulp-js-minify');
+  let uglify = require('gulp-uglify');
+  let pump = require('pump');
 
 
   $.gulp.task('js:foundation', function() {
     return $.gulp.src($.path.jsFoundation)
       .pipe($.gp.concat('foundation.js'))
-      // .pipe(minifyjs())
+      .pipe(uglify())
       .pipe($.gulp.dest($.config.root + '/assets/js'))
   })
 };
