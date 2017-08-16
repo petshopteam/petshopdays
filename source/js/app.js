@@ -9,10 +9,19 @@
     arrows: true,
     infinite: true,
     speed: 300,
-    slidesToShow: 6,
-    slidesToScroll: 6,
+    slidesToShow: 2,
+    slidesToScroll: 4,
     centerMode: true,
-    variableWidth: true
+    variableWidth: true,
+    autoplay: true,
+    responsive: [
+    {
+      breakpoint: 769, //768px autoscroll off
+      settings: {
+        autoplay: false
+      }
+    }
+  ]
     });
   };
   slickInit();
