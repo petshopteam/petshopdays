@@ -34,13 +34,18 @@
   height: 280px;
   background-color: #bbbbbb;
   margin-right: 10px;
+  overflow: hidden;
   img {
-    width: 100%;
-    height: 100%;
+    position: relative;
+    height: 280px;
+    width: auto;
   }
   @media(max-width: @brakepoint-small) {
     width: 194px;
     height: 194px;
+    img {
+      height: 194px;
+    }
   }
 }
 
