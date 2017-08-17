@@ -1,6 +1,10 @@
 .slider {
   position: relative;
   padding-top: 198px;
+
+  // временно (пока отсутствует баннер + расписание)
+  padding-top: 120px;
+
   padding-bottom: 150px;
   background-color: @main-bg-color;
   z-index: 10;
@@ -8,13 +12,22 @@
   @media(max-width: @brakepoint-large) {
     padding-top: 184px;
     padding-bottom: 145px;
+
+    // временно (пока отсутствует баннер + расписание)
+    padding-top: 110px;
   }
   @media(max-width: @brakepoint-medium) {
     padding-bottom: 184px;
+
+    // временно (пока отсутствует баннер + расписание)
+    padding-top: 50px;
   }
   @media(max-width: @brakepoint-small) {
     padding-top: 62px;
     padding-bottom: 77px;
+
+    // временно (пока отсутствует баннер + расписание)
+    padding-top: 30px;
   }
 }
 
@@ -55,7 +68,7 @@
   width: 600px;
   height: auto;
   background-color: @white;
-  top: 13.3%;
+  top: -50px;
   left: auto;
   right: 50%;
   padding: 60px 40px 55px 43px;
@@ -65,7 +78,7 @@
   }
   @media(max-width: @brakepoint-medium) {
     width: 570px;
-    top: 37%;
+    top: 210px;
     right: 24%;
     padding-right: 20px;
     padding-left: 35px;
@@ -77,7 +90,7 @@
     margin-left: auto;
     left: auto;
     right: auto;
-    top: 0;
+    top: -15px;
     padding: 0;
     padding-top: 25px;
     padding-left: 10px;
@@ -121,7 +134,8 @@
     display: none;
     &.small {
       display: block;
-      margin-top: 11px;
+      margin-top: 20px;
+      margin-bottom: -5px;
     }
   }
 }
@@ -157,6 +171,7 @@
   width: 189px;
   margin-bottom: 40px;
   margin-right: 62px;
+  font-weight: bold;
   &:nth-child(2n) {
     margin-right: 0;
   }

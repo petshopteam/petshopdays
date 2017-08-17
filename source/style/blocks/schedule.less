@@ -65,8 +65,9 @@
 }
 
 .schedule__list {
+  float: left;
   list-style: none;
-
+  width: 100%;
 }
 
 .schedule__item {
@@ -82,8 +83,17 @@
     left: 0; right: 0;
     z-index: 1;
   }
+  &.first {
+
+  }
+  &.last {
+
+  }
   @media(max-width: @brakepoint-large) {
     margin-bottom: 39px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    margin-bottom: 50px;
   }
   @media(max-width: @brakepoint-small) {
     &::before {
@@ -103,7 +113,7 @@
   font-family: @DinBold;
   font-size: 20px;
   line-height: 22px;
-  padding-right: 20px;
+  padding-right: 25px;
   z-index: 2;
   @media(max-width: @brakepoint-small) {
     position: relative;
@@ -129,6 +139,7 @@
   padding: 0 15px;
   background-color: @main-bg-color;
   text-align: left;
+  margin-left: 50px;
   &.small {
     float: left;
     font-family: @DinNormal;
@@ -141,7 +152,8 @@
       line-height: 24px;
     }
     @media(max-width: @brakepoint-medium) {
-      max-width: 46%;
+      max-width: 47%;
+      font-size: 18px;
     }
     @media(max-width: @brakepoint-small) {
       position: relative;
@@ -153,6 +165,10 @@
       max-width: 100%;
       width: 100%;
     }
+  }
+
+  @media(max-width: @brakepoint-medium) {
+    margin-left: 80px;
   }
 
   @media(max-width: @brakepoint-small) {

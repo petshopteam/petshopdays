@@ -114,6 +114,7 @@ line-height: 24px;
   font-family: @DinRegular;
   font-size: 16px;
   line-height: 22px;
+  font-weight: 700;
 
 }
 
@@ -151,6 +152,7 @@ line-height: 24px;
 // КНОПКИ
 
 .btn {
+  position: relative;
   display: inline-block;
   font-family: @DinBold;
   font-size: 18px;
@@ -168,12 +170,19 @@ line-height: 24px;
   }
 }
 
+.btn_rub {
+  padding-bottom: 2px;
+}
+
 // ИКОНКИ
 
 .rub {
   display: inline-block;
   font-family: @Rub;
   font-style: normal;
+  &_big {
+    font-size: 120%;
+  }
 }
 
 .social__item {
@@ -215,6 +224,10 @@ line-height: 24px;
 
 // TABS
 .toggle-tabs {
+
+  // скрыл табы пока нет расписания и спикеров на второй день
+  display: none !important;
+
   max-width: 200px;
   float: right;
   margin-top: 15px;
