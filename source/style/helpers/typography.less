@@ -195,7 +195,7 @@ line-height: 24px;
 
 .social__item {
   transition: background-color 0.2s;
-  display: inline-block;
+  display: inline-flex;
   vertical-align: top;
   list-style: none;
   border-radius: 50%;
@@ -207,24 +207,141 @@ line-height: 24px;
     margin-right: 0;
   }
   a {
-    font-family: @DinRegular;
-    font-size: 16px;
-    line-height: 60px;
-    text-transform: uppercase;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    img {
+      margin: auto;
+      width: 100%;
+      height: auto;
+    }
   }
   &.vk {
     &:hover {
       background-color: #4D75A3;
+    }
+    a {
+      img {
+        width: 21px;
+        height: 12px;
+        @media(max-width: @brakepoint-medium) {
+          width: 37px;
+          height: 21px;
+        }
+        @media(max-width: @brakepoint-small) {
+          width: 25px;
+          height: 14px;
+        }
+      }
     }
   }
   &.inst {
     &:hover {
       background-color: #E12F67;
     }
+    a {
+      img {
+        width: 19px;
+        height: 19px;
+        @media(max-width: @brakepoint-medium) {
+          width: 33px;
+          height: 33px;
+        }
+        @media(max-width: @brakepoint-small) {
+          width: 22px;
+          height: 21px;
+        }
+      }
+    }
   }
   &.fb {
     &:hover {
       background-color: #3B5998;
+    }
+    a {
+      img {
+        width: 9px;
+        height: 19px;
+        @media(max-width: @brakepoint-medium) {
+          width: 16px;
+          height: 33px;
+        }
+        @media(max-width: @brakepoint-small) {
+          width: 11px;
+          height: 21px;
+        }
+      }
+    }
+  }
+  @media(max-width: @brakepoint-medium) {
+    width: 58px;
+    height: 58px;
+    margin-right: 18px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media(max-width: @brakepoint-small) {
+    width: 38px;
+    height: 38px;
+    margin-right: 12px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  // большие --------------------- в футере
+  &.big {
+    width: 46px;
+    height: 46px;
+    margin-right: 22px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &.vk {
+      a {
+        img {
+          width: 30px;
+          height: 17px;
+          @media(max-width: @brakepoint-small) {
+            width: 24px;
+            height: 13px;
+          }
+        }
+      }
+    }
+    &.inst {
+      a {
+        img {
+          width: 28px;
+          height: 26px;
+          @media(max-width: @brakepoint-small) {
+            width: 22px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    &.fb {
+      a {
+        img {
+          width: 13px;
+          height: 26px;
+          @media(max-width: @brakepoint-small) {
+            width: 10px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    @media(max-width: @brakepoint-small) {
+      width: 36px;
+      height: 36px;
+      margin-right: 17px;
+      &:last-child {
+        margin-right: 0;
+      }
     }
   }
 }

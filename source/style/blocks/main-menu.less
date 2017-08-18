@@ -203,52 +203,17 @@
 .main-menu__social {
   float: right;
   margin-top: 14px;
-  .social__item.inst a {
-    background-position: 6px 6px;
-  }
   @media(max-width: @brakepoint-large) {
     margin-right: -17px;
   }
   @media(max-width: @brakepoint-medium) {
     float: none;
+    width: 100%;
     text-align: center;
     margin-top: 40px;
-    .social__item {
-      width: 57px;
-      height: 57px;
-      margin-right: 14px;
-      &.vk a {
-        background-size: 40px;
-        background-position: 8px
-      }
-      &.inst a {
-        background-size: 34px;
-        background-position: 11.5px
-      }
-      &.fb a {
-        background-size: 17px;
-        background-position: 20px
-      }
-    }
+    .social__item:extend(.big all){}
   }
   @media(max-width: @brakepoint-small) {
     margin-top: 30px;
-    .social__item {
-      width: 38px;
-      height: 38px;
-      margin-right: 12px;
-      &.vk a {
-        background-size: 25px;
-        background-position: 6px
-      }
-      &.inst a {
-        background-size: 22px;
-        background-position: 8px
-      }
-      &.fb a {
-        background-size: 11px;
-        background-position: 14px
-      }
-    }
   }
 }
