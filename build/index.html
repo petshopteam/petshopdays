@@ -35,7 +35,7 @@
           <div class="main-head__wrap"><h1 class="main-head__logo icon-p-days"></h1>
             <h2 class="title_h2 main-head__title">Первый городской фестиваль домашних животных</h2>
             <p class="main-head__date">30/09-01/10</p>
-            <p class="main-head__place">Санкт-Петербург,<a class="main-head__place-link" href="#map">Ткачи</a></p><a class="btn btn_rub" href="https://radario.ru/hosts/6331" target="_blank">купить билет за 200 <i class="rub">9</i></a>
+            <p class="main-head__place">Санкт-Петербург,<a class="main-head__place-link" href="#map">Ткачи</a></p><a class="btn btn_rub j-pay-btn-head" href="https://radario.ru/hosts/6331" target="_blank">купить билет за 200<i class="rub">9</i></a>
           </div>
         </div>
       </header>
@@ -361,7 +361,7 @@
           <p class="map__popup-place">Санкт-Петербург,<span class="main-head__place-link">Ткачи</span></p>
           <p class="text_light">Набережная Обводного канала, 60</p>
           <p class="text_light">Станция метро “Обводный канал”</p>
-          <p class="map__popup-cost">Стоимость билетов: 200 <span class="rub rub_big">5</span></p><a class="btn map__popup-btn" href="https://radario.ru/hosts/6331" target="_blank">купить билет</a>
+          <p class="map__popup-cost">Стоимость билетов: 200 <span class="rub rub_big">5</span></p><a class="btn map__popup-btn j-pay-btn" href="https://radario.ru/hosts/6331" target="_blank">купить билет</a>
         </div>
         <div id="mapkit-7181"></div>
       </section>
@@ -411,6 +411,15 @@
       /></noscript>
       <!-- DO NOT MODIFY -->
       <!-- End Facebook Pixel Code -->
+      
+      <script>
+      document.querySelector(".j-pay-btn").addEventListener("click", function() {
+        ga('send', 'event', 'button', 'click footer');
+      });
+      document.querySelector(".j-pay-btn-head").addEventListener("click", function() {
+        ga('send', 'event', 'button', 'click header');
+      });
+      </script>
     </main>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
     <link rel="stylesheet" href="https://cdn.mapkit.io/v1/infobox.css">
