@@ -22,7 +22,7 @@ section.speakers#speakers.relative
             h3.title_h3.speakers__item-title= firstname
               br 
               =lastname
-              h4.title_h4.speakers__item-subtitle= subtitle
+              h4.title_h4.speakers__item-subtitle!= [subtitle]
               p.text_light.speakers__text= text
         
         //- speaker-1
@@ -34,7 +34,7 @@ section.speakers#speakers.relative
         //- "Телерадиоведущий, автор программы \"В мире животных\" ",
         //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
         //- )
-        
+
         //- speaker-2
         //- +speaker(
         //- "Тимофей",
@@ -51,8 +51,8 @@ section.speakers#speakers.relative
         "Манев",
         "speakers__item-img img-3",
         "/assets/img/photos/speaker-3.png",
-        "Автор и ведущий программы \"Планета собак\" ",
-        " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
+        "Автор и ведущий программы <br /> \"Планета собак\" ",
+        ""
         )
         
         //- speaker-4
@@ -61,8 +61,8 @@ section.speakers#speakers.relative
         "Верещагин",
         "speakers__item-img img-4",
         "/assets/img/photos/speaker-4.png",
-        "Инструктор-дрессировщик собак, консультант Планета собак ",
-        " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
+        "Инструктор-дрессировщик собак, консультант National Geographic",
+        ""
         )
         
         //- speaker-5
