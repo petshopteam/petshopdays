@@ -1,5 +1,79 @@
 // PARALLAX ANIMALS
 
+// HEADER ANIMALS
+&.animal-1 {
+  position: absolute;
+  width: 500px;
+  left: 54%;
+  top: 30%;
+  @media(max-width: @brakepoint-large) {
+    left: -350px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    left: -360px;
+  }
+  @media(max-width: @brakepoint-small) {
+    display: none;
+  }
+}
+
+&.animal-2 {
+  position: absolute;
+  width: 500px;
+  left: -100px;
+  top: -155px;
+  @media(max-width: @brakepoint-large) {
+    display: none;
+  }
+}
+
+&.animal-3 {
+  position: absolute;
+  width: 500px;
+  left: -100px;
+  top: auto;
+  bottom: -310px;
+  @media(max-width: @brakepoint-large) {
+    display: none;
+  }
+}
+
+&.animal-4 {
+  position: absolute;
+  width: 500px;
+  left: auto;
+  right: -80px;
+  top: -160px;
+  @media(max-width: @brakepoint-medium) {
+    right: -170px;
+  }
+  @media(max-width: @brakepoint-small) {
+    right: -215px;
+    top: -230px;
+  }
+}
+
+&.animal-5 {
+  position: absolute;
+  width: 500px;
+  left: auto;
+  right: -80px;
+  top: auto;
+  bottom: -180px;
+  @media(max-width: @brakepoint-large) {
+    bottom: -110px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    right: -170px;
+  }
+  @media(max-width: @brakepoint-small) {
+    right: -215px;
+    bottom: -140px;
+  }
+}
+
+// ABOUT ANIMALS
+
 .about__animal {
   opacity: 0.4;
   position: relative;
@@ -53,71 +127,6 @@
     position: relative;
     @media(max-width: @brakepoint-large) {
       width: 170%;
-    }
-    &.animal-1 {
-      width: 500px;
-      left: 300px;
-      top: 280px;
-      @media(max-width: @brakepoint-large) {
-        left: -585px;
-      }
-      @media(max-width: @brakepoint-medium) {
-        top: 350px;
-        left: -500px;
-      }
-      @media(max-width: @brakepoint-small) {
-        display: none;
-      }
-    }
-    &.animal-2 {
-      width: 500px;
-      left: -780px;
-      top: -640px;
-      @media(max-width: @brakepoint-large) {
-        display: none;
-      }
-    }
-    &.animal-3 {
-      width: 500px;
-      left: -780px;
-      top: -680px;
-      @media(max-width: @brakepoint-large) {
-        display: none;
-      }
-    }
-    &.animal-4 {
-      width: 500px;
-      left: 800px;
-      top: -1750px;
-      @media(max-width: @brakepoint-large) {
-        top: -650px;
-        left: 210px;
-      }
-      @media(max-width: @brakepoint-medium) {
-        top: -650px;
-        left: 280px;
-      }
-      @media(max-width: @brakepoint-small) {
-        top: -205px;
-        left: 20px;
-      }
-    }
-    &.animal-5 {
-      width: 500px;
-      left: 800px;
-      top: -1900px;
-      @media(max-width: @brakepoint-large) {
-        top: -740px;
-        left: 210px;
-      }
-      @media(max-width: @brakepoint-medium) {
-        top: -690px;
-        left: 280px;
-      }
-      @media(max-width: @brakepoint-small) {
-        top: -340px;
-        left: 20px;
-      }
     }
   }
   &_header {
