@@ -24,6 +24,7 @@
     margin-right: 10px;
     margin-left: 10px;
     padding-top: 60px;
+    padding-bottom: 0;
   }
 }
 
@@ -34,20 +35,19 @@
     margin-bottom: 55px;
   }
   @media(max-width: @brakepoint-small) {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 }
 
 .speakers__list {
   list-style: none;
   @media(max-width: @brakepoint-small) {
-    margin-top: 50px;
-    // временно (пока отсутствуют табы)
-    margin-top: 10px;
+    margin-top: 40px;
   }
 }
 
 .speakers__item {
+  position: relative;
   float: left;
   width: 48%;
   margin-right: 20px;
@@ -78,22 +78,29 @@
   position: relative;
   left: -43px;
   margin-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 30px;
   @media(max-width: @brakepoint-large) {
     margin-top: 8px;
-    margin-bottom: 31px;
+    margin-bottom: 10px;
+    font-size: 28px;
   }
   @media(max-width: @brakepoint-medium) {
+    float: left;
+    width: 45%;
     padding-top: 19px;
-    padding-bottom: 17px;
+    padding-bottom: 35px;
     left: -58px;
+    font-size: 30px;
   }
   @media(max-width: @brakepoint-small) {
     display: inline-block;
-    left: -40px;
+    left: -30px;
     top:0;
     margin: 0;
     margin-top: -10px;
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 13px;
   }
 }
 
@@ -101,24 +108,55 @@
   margin-bottom: 20px;
   @media(max-width: @brakepoint-large) {
     margin-bottom: 11px;
+    font-size: 14px;
   }
   @media(max-width: @brakepoint-medium) {
-    margin-bottom: 15px;
+    float: left;
+    width: 45%;
+    margin-bottom: 25px;
+    font-size: 16px;
   }
   @media(max-width: @brakepoint-small) {
     display: inline-block;
     margin: 0;
     margin-top: -5px;
     width: 50%;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
 .speakers__text {
+  position: absolute;
+  left: 272px;
+  bottom: 0;
+  height: 75px;
+  display: inline-block;
+  vertical-align: top;
+
+  @media(max-width: @brakepoint-large) {
+    left: 224px;
+    height: auto;
+    min-height: 50px;
+    font-size: 14px;
+  }
+  @media(max-width: @brakepoint-medium) {
+    display: block;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    min-height: auto;
+    font-size: 16px;
+    float: left;
+    width: 45%;
+  }
   @media(max-width: @brakepoint-small) {
     display: inline-block;
     margin: 0;
-    margin-top: 5px;
+    margin-top: 10px;
     width: 50%;
+    font-size: 14px;
+    line-height: 18px;
   }
 }
 
@@ -139,6 +177,7 @@
     width: 129px;
     height: 165px;
     margin-right: 10px;
+    margin-bottom: 30px;
   }
   &.img-1 {
     background-color: @speaker-1;

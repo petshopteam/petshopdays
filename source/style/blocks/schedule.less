@@ -5,14 +5,17 @@
   z-index: 10;
   overflow: hidden;
   @media(max-width: @brakepoint-large) {
-    padding-bottom: 145px;
+    padding-bottom: 80px;
   }
   @media(max-width: @brakepoint-medium) {
-    padding-bottom: 118px;
+    padding-bottom: 40px;
   }
   @media(max-width: @brakepoint-small) {
     padding-top: 0;
     padding-bottom: 22px;
+    .toggle-tabs {
+      margin-bottom: 10px;
+    }
   }
 }
 
@@ -44,7 +47,7 @@
   float: left;
   margin-bottom: 40px;
   @media(max-width: @brakepoint-small) {
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 }
 
@@ -65,12 +68,16 @@
 }
 
 .schedule__list {
+  position: relative;
   float: left;
   list-style: none;
   width: 100%;
 }
 
 .schedule__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: relative;
   margin-bottom: 50px;
   &::before {
@@ -83,12 +90,6 @@
     left: 0; right: 0;
     z-index: 1;
   }
-  &.first {
-
-  }
-  &.last {
-
-  }
   @media(max-width: @brakepoint-large) {
     margin-bottom: 39px;
   }
@@ -96,120 +97,142 @@
     margin-bottom: 50px;
   }
   @media(max-width: @brakepoint-small) {
+    display: block;
+    // временно
+    margin-bottom: 40px;
+    &:extend(.clearfix);
     &::before {
+      top: 11px;
+      // временно
       display: none;
     }
+  }
+  &.first {
+    @media(max-width: @brakepoint-small) {
+      &::before {
+        display: none;
+      }
+    }
+  }
+}
+
+.schedule__item-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 85%;
+  @media(max-width: @brakepoint-small) {
+
   }
 }
 
 .schedule__item-time {
-  min-width: 50px;
-  text-align: left;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-50%);
   background-color: @main-bg-color;
   font-family: @DinBold;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
-  padding-right: 25px;
+  text-align: left;
+  padding-right: 10px;
   z-index: 2;
+  white-space: nowrap;
+  width: 11%;
+  margin-right: 4%;
+  &.full {
+    width: auto;
+  }
+  @media(max-width: @brakepoint-large) {
+    width: 12%;
+    margin-right: 3%;
+  }
+  @media(max-width: @brakepoint-medium) {
+    font-size: 16px;
+    width: 13%;
+    margin-right: 2%;
+  }
   @media(max-width: @brakepoint-small) {
     position: relative;
+    font-size: 20px;
     float: left;
-    padding: 0;
-    padding-left: 50px;
-    padding-right: 10px;
-    margin: 0;
-    margin-left: -50px;
-    transform: translateY(0);
+    width: auto;
     margin-right: 20px;
-    z-index: 20;
+  }
+}
+
+.schedule__item-place {
+  background-color: @main-bg-color;
+  font-size: 18px;
+  line-height: 22px;
+  padding: 0 10px;
+  z-index: 2;
+  @media(max-width: @brakepoint-medium) {
+    font-size: 16px;
+  }
+  @media(max-width: @brakepoint-small) {
+    font-size: 18px;
+    padding-left: 0;
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: left;
   }
 }
 
 .schedule__item-title {
-  position: relative;
   font-family: @DinBold;
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 22px;
   z-index: 2;
-  padding: 0 15px;
+  padding: 0 10px;
   background-color: @main-bg-color;
   text-align: left;
-  margin-left: 50px;
+  @media(max-width: @brakepoint-medium) {
+    font-size: 16px;
+  }
+  @media(max-width: @brakepoint-small) {
+    font-size: 18px;
+    padding: 0;
+  }
   &.small {
-    float: left;
+    display: inline-block;
     font-family: @DinNormal;
-    font-size: 20px;
+    font-size: 18px;
     line-height: 22px;
     text-transform: none;
-    margin-left: 148px;
+    max-width: 41%;
     @media(max-width: @brakepoint-large) {
-      max-width: 51%;
-      line-height: 24px;
+      max-width: 33%;
     }
     @media(max-width: @brakepoint-medium) {
-      max-width: 47%;
-      font-size: 18px;
+      font-size: 16px;
+      max-width: 25%;
     }
     @media(max-width: @brakepoint-small) {
-      position: relative;
-      padding: 0;
-      padding-top: 25px;
-      margin: 0;
-      font-size: 16px;
-      line-height: 24px;
-      max-width: 100%;
+      font-size: 18px;
+      display: block;
       width: 100%;
+      max-width: initial;
+      padding: 0;
+      text-align: left;
+      margin-bottom: 10px;
     }
-  }
-
-  @media(max-width: @brakepoint-medium) {
-    margin-left: 80px;
-  }
-
-  @media(max-width: @brakepoint-small) {
-    float: left;
-    position: relative;
-    padding: 0;
-    margin: 0;
-    margin-left: -20px;
   }
 }
 
 .schedule__item-name {
-  position: absolute;
-  top: 50%;
-  right: 0;
-  transform: translateY(-50%);
   font-family: @DinRegular;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 22px;
-  padding-left: 20px;
+  padding-left: 10px;
   background-color: @main-bg-color;
   z-index: 2;
+  @media(max-width: @brakepoint-medium) {
+    font-size: 16px;
+  }
   @media(max-width: @brakepoint-small) {
-    top: auto;
-    bottom: auto;
-    left: auto;
-    right: 0;
-    float: right;
-    position: absolute;
+    font-size: 18px;
     padding: 0;
-    transform: translateY(0);
-    z-index: 10;
-    &::before {
-      content: '';
-      position: absolute;
-      width: 2000px;
-      height: 1px;
-      background-color: @blue;
-      top: 50%;
-      right: 110%;
-      z-index: -1;
-    }
+    font-weight: bold;
+    text-align: left;
   }
 }

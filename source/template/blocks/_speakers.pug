@@ -17,126 +17,174 @@ section.speakers#speakers.relative
       ul.speakers__list.clearfix.j-sp-tab-1
         
         mixin speaker(firstname, lastname, imgClass, src, subtitle, text)
-          li.speakers__item
+          li.speakers__item.clearfix
             img(class=imgClass, src=src)
             h3.title_h3.speakers__item-title= firstname
               br 
               =lastname
               h4.title_h4.speakers__item-subtitle!= [subtitle]
-              p.text_light.speakers__text= text
-        
-        //- speaker-1
-        //- +speaker(
-        //- "Николай",
-        //- "Дроздов",
-        //- "speakers__item-img img-1",
-        //- "/assets/img/photos/speaker-1.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+              p.text_light.speakers__text!= text
 
-        //- speaker-2
-        //- +speaker(
-        //- "Тимофей",
-        //- "Боженов",
-        //- "speakers__item-img img-2",
-        //- "/assets/img/photos/speaker-2.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        //- speaker-1
+        +speaker(
+        "Тимофей",
+        "Баженов",
+        "speakers__item-img img-1",
+        "/assets/img/photos/day_1/speaker-1.png",
+        "Телевизионный журналист, зоолог, специалист по выживанию, автор и ведущий программы <span class='no-wrap'>\“Рейтинг Баженова\”</span>",
+        "\“Содержание дома диких животных\”"
+        )
         
-        //- speaker-3
+        //- speaker-2
         +speaker(
         "Григорий",
         "Манев",
+        "speakers__item-img img-2",
+        "/assets/img/photos/day_1/speaker-2.png",
+        "Автор и ведущий программы <span class='no-wrap'>\“Планета собак\”</span> на телеканале <span class='no-wrap'>\“Моя планета\”</span> ",
+        "\“В доме появился щенок\”"
+        )
+        
+        //- speaker-3
+        +speaker(
+        "Дмитрий",
+        "\“Гоблин\” Пучков",
         "speakers__item-img img-3",
-        "/assets/img/photos/speaker-3.png",
-        "Автор и ведущий программы <br /> \"Планета собак\" ",
-        ""
+        "/assets/img/photos/day_1/speaker-7.png",
+        "Писатель, публицист, переводчик и блогер",
+        "Интервью <br>\“Как воспитывать собаку-убийцу\” "
         )
         
         //- speaker-4
         +speaker(
-        "Алексей",
-        "Верещагин",
+        "Анна",
+        "Magic Family",
         "speakers__item-img img-4",
-        "/assets/img/photos/speaker-4.png",
-        "Инструктор-дрессировщик собак, консультант National Geographic",
-        ""
+        "/assets/img/photos/day_1/speaker-8.png",
+        "Youtube блогер",
+        "Тема уточняется"
         )
         
         //- speaker-5
-        //- +speaker(
-        //- "Евгения",
-        //- "Тимонова",
-        //- "speakers__item-img img-5",
-        //- "/assets/img/photos/speaker-5.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        +speaker(
+        "Алексей",
+        "Верещагин",
+        "speakers__item-img img-5",
+        "/assets/img/photos/day_1/speaker-3.png",
+        "Инструктор - дрессировщик собак, консультант National Geographic",
+        "\“Что говорят собаки\”"
+        )
         
         //- speaker-6
-        //- +speaker(
-        //- "Имя",
-        //- "Фамилия",
-        //- "speakers__item-img img-6",
-        //- "/assets/img/photos/speaker-6.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        +speaker(
+        "Ирина",
+        "Кацнер",
+        "speakers__item-img img-6",
+        "/assets/img/photos/day_1/speaker-4.png",
+        "Президент клуба любителей кошек \“Вариета\”, судья международной категории по всем породам кошек",
+        "\“Кошка и вы: кто в доме хозяин?!\”"
+        )
         
         //- speaker-7
-        //- +speaker(
-        //- "Имя",
-        //- "Фамилия",
-        //- "speakers__item-img img-7",
-        //- "/assets/img/photos/speaker-7.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        +speaker(
+        "Андрей",
+        "Петров",
+        "speakers__item-img img-7",
+        "/assets/img/photos/day_1/speaker-5.png",
+        "instagram @xaskibest",
+        "\“Хаски: почему их все любят\”"
+        )
         
         //- speaker-8
-        //- +speaker(
-        //- "Имя",
-        //- "Фамилия",
-        //- "speakers__item-img img-8",
-        //- "/assets/img/photos/speaker-8.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        +speaker(
+        "Марфа",
+        "Петербургская",
+        "speakers__item-img img-8",
+        "/assets/img/photos/day_1/speaker-6.png",
+        "Fashion блогер",
+        "\“Фобии, страхи и неврозы у питомца. Почему в их появлении часто виноват хозяин\”"
+        )
         
         
+        
+        
+      //- DAY 2 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+      
       ul.speakers__list.clearfix.j-sp-tab-2
         
-        mixin speaker(firstname, lastname, imgClass, src, subtitle, text)
-          li.speakers__item
-            img(class=imgClass, src=src)
-            h3.title_h3.speakers__item-title= firstname
-              br 
-              =lastname
-              h4.title_h4.speakers__item-subtitle= subtitle
-              p.text_light.speakers__text= text
         
-        
+        //- speaker-1
+        +speaker(
+        "Григорий",
+        "Манев",
+        "speakers__item-img img-1",
+        "/assets/img/photos/day_2/speaker-1.png",
+        "\"Краткий курс дрессировки собак\" ",
+        " \"Содержание дома диких животных\" "
+        )
+        //- speaker-2
+        +speaker(
+        "Григорий",
+        "Манев",
+        "speakers__item-img img-2",
+        "/assets/img/photos/day_2/speaker-2.png",
+        "youtube blogger",
+        "\"Питомец и социальные сети\""
+        )
+        //- speaker-3
+        +speaker(
+        "Граубергер",
+        "Наталья",
+        "speakers__item-img img-3",
+        "/assets/img/photos/day_2/speaker-3.png",
+        "Ветеринарный врач клиники Сотникова",
+        "\"Полезные советы по кормлению. Покупаем корм или готовим сами?\""
+        )
+        //- speaker-4
+        +speaker(
+        "Ирина",
+        "Кацер",
+        "speakers__item-img img-4",
+        "/assets/img/photos/day_2/speaker-4.png",
+        "Президент клуба любителей кошек \“Вариета\”, судья международной категории по всем породам кошек",
+        "\“Кошка и вы: кто в доме хозяин?!\”"
+        )
+        //- speaker-5
+        +speaker(
+        "Андрей",
+        "Петров",
+        "speakers__item-img img-5",
+        "/assets/img/photos/day_2/speaker-5.png",
+        "instagram @xaskibest",
+        "\“Хаски: почему их все любят\”"
+        )
+        //- speaker-6
+        +speaker(
+        "Андрей",
+        "Петров",
+        "speakers__item-img img-6",
+        "/assets/img/photos/day_2/speaker-6.png",
+        "Фотограф",
+        "\“Instagram и анималистическая фотография\”"
+        )
         //- speaker-7
-        //- +speaker(
-        //- "Имя",
-        //- "Фамилия",
-        //- "speakers__item-img img-7",
-        //- "/assets/img/photos/speaker-7.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
-        
-        //- speaker-8
-        //- +speaker(
-        //- "Имя",
-        //- "Фамилия",
-        //- "speakers__item-img img-8",
-        //- "/assets/img/photos/speaker-8.png",
-        //- "Телерадиоведущий, автор программы \"В мире животных\" ",
-        //- " \"Сознание животных: как разговаривают обезьяны и чем думают муравьи\" "
-        //- )
+        +speaker(
+        "Лера \“Помадка\”",
+        "Тарасова",
+        "speakers__item-img img-7",
+        "/assets/img/photos/day_2/speaker-7.png",
+        "Beauty блоггер",
+        "\“Как содержать африканского ежа\”"
+        )
+        //- speaker-8 special guest :D
+        +speaker(
+        "Специальный",
+        "гость",
+        "speakers__item-img img-8",
+        "/assets/img/photos/day_2/speaker-8.png",
+        "<span class='transparent'>Тема уточняется</span>",
+        "<span class='transparent'>Тема уточняется</span>"
+        )
     
     
   
