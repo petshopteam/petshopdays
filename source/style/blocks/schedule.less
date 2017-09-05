@@ -123,7 +123,8 @@
   flex-wrap: wrap;
   width: 85%;
   @media(max-width: @brakepoint-small) {
-
+    position: relative;
+    top: -15px;
   }
 }
 
@@ -140,6 +141,14 @@
   margin-right: 4%;
   &.full {
     width: auto;
+    @media(max-width: @brakepoint-small) {
+      z-index: 8;
+      position: relative;
+      padding-left: 20px;
+      transform: translateX(-20px);
+      margin-right: 0;
+
+    }
   }
   @media(max-width: @brakepoint-large) {
     width: 12%;
@@ -156,6 +165,20 @@
     float: left;
     width: auto;
     margin-right: 20px;
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1000px;
+      height: 1px;
+      background-color: @blue;
+      top: 50%;
+      left: 100%;
+    }
+    &.full {
+      &::after {
+        display: none;
+      }
+    }
   }
 }
 
@@ -174,6 +197,11 @@
     width: 50%;
     margin-bottom: 20px;
     text-align: left;
+
+    position: relative;
+    top: -7px;
+    right: -66%;
+    padding-left: 10px;
   }
 }
 
@@ -192,6 +220,20 @@
   @media(max-width: @brakepoint-small) {
     font-size: 18px;
     padding: 0;
+
+    position: relative;
+    padding-left: 10px;
+
+    &::after {
+      position: absolute;
+      content: '';
+      width: 1000px;
+      height: 1px;
+      background-color: @blue;
+      top:50%;
+      right: 100%;
+    }
+
   }
   &.small {
     display: inline-block;
@@ -215,6 +257,9 @@
       padding: 0;
       text-align: left;
       margin-bottom: 10px;
+      &::after {
+        display: none;
+      }
     }
   }
 }
