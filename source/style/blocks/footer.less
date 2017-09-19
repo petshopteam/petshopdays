@@ -104,6 +104,51 @@
   }
 }
 
+.main-foot__partners {
+  float: right;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-top: 25px;
+  text-align: center;
+  @media(max-width: @brakepoint-medium) {
+    float: none;
+    display: inline-block;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 50px;
+  }
+  @media(max-width: @brakepoint-small) {
+    display: block;
+    max-width: 300px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 85px;
+  }
+}
+
+.main-foot__partners-title {
+  margin-bottom: 10px;
+  color: #00121f;
+}
+
+.main-foot__partner {
+  margin-right: 15px;
+  display: inline-block;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    display: inline-block;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+  }
+  &.partner-1 {
+    max-width: 60px;
+  }
+}
+
 // topline
 .main-topline {
   margin-top: 67px;
