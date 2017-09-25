@@ -42,6 +42,8 @@
   $(window).scroll(function(){
     var winHeight = this.scrollY;
 
+
+
     if ( $(popup).hasClass('active') ) {
       var thisPop = popup;
       var thisPopTop = popup.css('top');
